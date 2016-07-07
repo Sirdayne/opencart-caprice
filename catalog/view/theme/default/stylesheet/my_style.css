@@ -1,0 +1,186 @@
+.container{
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  width: 926px;
+}
+
+.container-con{
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  width: 926px;
+}
+
+/*
+.cart{
+    width: 300px;
+    
+    height: 300px;
+    
+    display: inline-block;
+    
+    padding: 10px;
+    
+    font: normal 11px Arial;
+    
+}*/
+
+.logo-pink{
+    background: url(../img/logo-pink.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.logo-footer{
+    height: 90px;
+    width: 90px;
+}
+
+.logo-footer-dark{
+    background: url(../img/logo-kapriz-dark.png) center center no-repeat;
+    background-size: 100%;
+}
+    
+.price-basket, .option{
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    letter-spacing: .6px;
+    padding: 8px;
+    
+    color:#3F3F3F !important;
+    background: #fff !important;
+    border: 0.5px solid #3F3F3F !important;
+    
+    transition: all .1s linear;
+} 
+
+.price-basket a, .option a{ 
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+.price-basket:hover{
+    background: #E25082 !important;
+    color: #fff !important;
+    border: 1px solid #E25082 !important;
+}
+
+.main-section{
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    width: 926px;
+    
+}
+
+.filters{
+    display: inline-block;
+    vertical-align:top;
+    
+    width: 34%;
+    
+    font-weight: 700;
+    
+    color: rgba(0,0,0,0.6);
+}
+
+.filter{
+    width: 295px;
+    
+    display: inline-block;
+}
+
+.filter-text{    
+    width: 230px;
+    
+    margin-left: 40px;
+    
+    display: inline-block;
+}
+
+.filter-but{
+    width: 20px;
+    height: 20px;
+    
+    background: url(../img/filter-but.png) center center no-repeat;
+    background-size: cover;
+    
+    display: inline-block;
+    
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+
+.spoiler{
+    width: 260px;
+    
+    margin-left: 40px;
+}
+
+.spoiler-block{
+    display: inline-block;
+    
+    border: 2px solid rgba(203,84,131,1);
+    
+    border-radius: 25px;
+    
+    color: rgba(203,84,131,1);
+    
+    font-weight: 600;
+    
+    text-align: center;
+    
+    cursor: pointer;
+    
+    transition: 0.5s linear;
+    
+    margin: 2px;
+    
+    padding: 5px;
+    
+    font-size: 15px;
+}
+
+.spoiler-block:hover{
+    background: rgba(203,84,131,1);
+    
+    color: rgba(255,255,255,1);
+}
+
+/* goods */
+.showcase{
+    display: inline-block;
+    
+    width: 65%;
+}
+
+
+
+.button-custom{
+	background: rgba(255,255,255,1) !important;
+	border: 0px solid rgba(255,255,255,1) !important;	
+}
+
+.button-custom button{
+	background: rgba(255,255,255,1) !important;
+	border: 0px solid rgba(255,255,255,1) !important;	
+}
+
+.button-custom .fa-shopping-cart{
+	color: rgba(203,84,131,1) !important;
+}
+
+
+.text-align-product{
+	text-align:center !important;
+}
+
+.how-find a{
+    margin-bottom: 200px;
+}
+
+.find-wrapper{
+    margin-bottom: 0 !important;
+}
