@@ -16,7 +16,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h2><?php echo $heading_title; ?></h2>
+      <!--<h2><?php echo $heading_title; ?></h2>-->
       <?php if ($thumb || $description) { ?>
       <div class="row">
         <?php if ($thumb) { ?>
@@ -94,10 +94,10 @@
         </div>
       </div>
       <br />
-      <div class="row">
+     <div class="row">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12">
-          <div class="product-thumb">
+          <div class="product-thumb product-thumb-border">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
               <div class="caption text-align-product">
@@ -119,14 +119,14 @@
                   <?php if (!$product['special']) { ?>
                   <?php echo $product['price']; ?>
                   <?php } else { ?>
-                  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                  <span class="price-new"><?php echo $product['special']; ?></span> <!--<span class="price-old"><?php echo $product['price']; ?></span>-->
                   <?php } ?>
                   <?php if ($product['tax']) { ?>
                   <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
                   <?php } ?>
                 </p>
                 <?php } ?>
-              </div>
+             </div>
              
               <div class="button-group button-custom">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa fa-shopping-cart"></i></button>

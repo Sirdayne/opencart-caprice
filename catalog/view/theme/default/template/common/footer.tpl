@@ -105,12 +105,13 @@
 					<span>8 (7172) 265050</span>
 				</div>
 			</div>
-			<div class="under-footer clearfix">
+			
+		</footer>
+	</div>
+	    <div class="under-footer clearfix">
 				<div class="left-uf">www.ginnova.kz</div>
 				<div class="right-uf">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></div>
 			</div>
-		</footer>
-	</div>
 
 
 

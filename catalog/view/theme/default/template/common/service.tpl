@@ -11,6 +11,24 @@
 	<link rel="stylesheet" href="catalog/view/theme/default/css/change-header-service.css">
 	
 	
+	<!-- module SPECIAL.tpl in slider -->
+	<div class="">
+<!--<div class="container"> -->
+  <div class="row">
+       <?php echo $column_left; ?>
+    <?php if ($column_left && $column_right) { ?>
+    <?php $class = 'col-sm-3'; ?>
+    <?php } elseif ($column_left || $column_right) { ?>
+    <?php $class = 'col-sm-9'; ?>
+    <?php } else { ?>
+    <?php $class = 'col-sm-12 col-xs-9'; ?>
+    <?php } ?>
+    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+    <?php echo $column_right; ?>
+  </div>
+</div>
+	
+<!--
 <div class="slider block-in">
 			<div class="slider__item">
 				<a href=""><img src="catalog/view/theme/default/img/flower.png" class="slider__item__img" /></a>
@@ -143,6 +161,8 @@
 				<div class="slider__item__shadow"></div>
 			</div>
 		</div>
+		
+		-->
 		<section>
 			<div class="bouquets-b">
 				<div class="bouquets block-in">

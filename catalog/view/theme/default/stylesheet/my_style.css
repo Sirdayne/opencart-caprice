@@ -26,6 +26,8 @@
     
 }*/
 
+/* ~~~~ changes in style.css ~~~~ */
+
 .logo-pink{
     background: url(../img/logo-pink.png) center center no-repeat;
     background-size: 100%;
@@ -40,7 +42,7 @@
     background: url(../img/logo-kapriz-dark.png) center center no-repeat;
     background-size: 100%;
 }
-    
+
 .price-basket, .option{
     margin: 10px;
     border-radius: 25px;
@@ -54,6 +56,8 @@
     
     transition: all .1s linear;
 } 
+
+/* ~~~~ end of changes in style.css ~~~~  */
 
 .price-basket a, .option a{ 
     color: rgba(0,0,0,1);
@@ -72,6 +76,50 @@
     position: relative;
     width: 926px;
     
+}
+
+.panel, .panel-footer{
+    border: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.panel-heading, .panel-footer{
+    background: #FFF !important;
+}
+
+.panel-heading:hover, .panel-footer:hover{
+    background: #FFF !important;
+}
+
+#scale-slider{
+    height: 1px !important;   
+}
+
+.ui-slider-range{
+    height: 1px !important;
+    background: #E25082 !important;
+}
+
+.ui-slider-handle{
+    height: 5px  !important;
+    width: 5px  !important;
+    margin: 2.5px 0 0 0 !important;
+    border-radius: 100% !important;
+    background: #E25082 !important;
+}
+
+.ui-state-hover, .ui-state-focus, .ui-state-active{
+    background: #E25082 !important;
+    border-color: #E25082 !important;
+}
+
+.ui-slider-label{
+    font-size: 10px !important;
+}
+
+.ui-slider-pip{
+    display: none;
 }
 
 .filters{
@@ -112,6 +160,9 @@
     cursor: pointer;
 }
 
+.spoiler-cursor{
+    cursor: pointer;
+}
 
 .spoiler{
     width: 260px;
@@ -123,13 +174,10 @@
     display: inline-block;
     
     border: 2px solid rgba(203,84,131,1);
-    
     border-radius: 25px;
-    
     color: rgba(203,84,131,1);
     
     font-weight: 600;
-    
     text-align: center;
     
     cursor: pointer;
@@ -137,10 +185,23 @@
     transition: 0.5s linear;
     
     margin: 2px;
-    
-    padding: 5px;
-    
+    padding: 5px!important;
     font-size: 15px;
+    
+    overflow: hidden;
+}
+
+.list-group-item{
+    border: 0px solid #FFF;
+}
+
+.checking input{
+   width: 0px;
+}
+
+input:checked + span{
+   background: rgba(203,84,131,1) !important;
+    color: #FFF !important;
 }
 
 .spoiler-block:hover{
@@ -156,7 +217,28 @@
     width: 65%;
 }
 
+.product-thumb-border:hover {
+    border: 1px solid #ddd;
+}
 
+.slider-padding{
+    padding-top: 40px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.slider-padding a{
+    color: #FFF;
+}
+/*   ИКОНКИ ПОЯВЛЕНИЕ
+.product-thumb:hover .fa{
+    display: block;
+}
+
+.fa{
+    display: none;
+    transition: 5s linear;
+}*/
 
 .button-custom{
 	background: rgba(255,255,255,1) !important;
@@ -172,6 +254,10 @@
 	color: rgba(203,84,131,1) !important;
 }
 
+button#list-view, button#grid-view{
+    visibility: hidden;
+}
+
 
 .text-align-product{
 	text-align:center !important;
@@ -183,4 +269,12 @@
 
 .find-wrapper{
     margin-bottom: 0 !important;
+}
+
+#content{
+    line-height: 20px;
+}
+
+.slider-size img{
+
 }

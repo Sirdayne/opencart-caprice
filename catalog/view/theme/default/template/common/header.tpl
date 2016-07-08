@@ -110,8 +110,8 @@
 								<li><a href="index.php?route=common/eventdecor">Оформление мероприятий</a></li>
 							</ul>
 						</li>
-						<li><a href="index.php?route=common/maincatalog">Букеты</a></li>
-						<li><a href="index.php?route=product/category&path=59">Доставка</a></li>
+						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
+						<li><a href="index.php?route=common/maincatalog">Доставка</a></li>
 						<li><a href="index.php?route=information/contact">Контакты</a></li>
 					</ul>
 				</nav>

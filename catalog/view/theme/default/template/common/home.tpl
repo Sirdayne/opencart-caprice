@@ -1,6 +1,8 @@
 <?php echo $header; ?>
 
-
+<!-- ПЕРЕНАПРАВЛЕНИЕ НА ГЛАВНУЮ
+<meta http-equiv="refresh" content="0; URL='http://localhost/opencart/index.php?route=common/service'" />-->
+<!--
 <div class="main-section">
 
     <div class="filters">
@@ -63,7 +65,7 @@
     </div>
 
     <div class="showcase">
-
+-->
 <div class="">
 <!--<div class="container"> -->
   <div class="row">
@@ -80,7 +82,9 @@
   </div>
 </div>
  
+ <!--
  </div>
+</div>-->
 
 <!-- HOME BY TIMA
 <div class="slider block-in">

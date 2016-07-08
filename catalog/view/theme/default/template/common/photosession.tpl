@@ -67,7 +67,7 @@
 			</div>
 			<div class="pic-wrapper photosession-picture"></div>
 		</div>
-		<section class="portfolio clearfix">
+		<!--<section class="portfolio clearfix">
 			<h3>Галерея</h3>
 			<div class="mini-slider-wrap">
 				<div class="mini-slider clearfix">
@@ -85,7 +85,30 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
+		
+           <!-- gallery.tpl ГАЛЕРЕЯ -->
+           
+            <!--<div class="">
+            <div class="container"> -->
+             
+             <section class="portfolio clearfix">
+               <h3>Галерея</h3>
+              <div class="row">
+                <?php echo $column_left; ?>
+                <?php if ($column_left && $column_right) { ?>
+                <?php $class = 'col-sm-3'; ?>
+                <?php } elseif ($column_left || $column_right) { ?>
+                <?php $class = 'col-sm-9'; ?>
+                <?php } else { ?>
+                <?php $class = 'col-sm-12 col-xs-9'; ?>
+                <?php } ?>
+                <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+                <?php echo $column_right; ?>
+              </div>
+            </section>
+
+            
 		<section class="howwework">
 			<div class="pink-middle clearfix">
 				<h3>Как мы работаем?</h3>
@@ -184,7 +207,7 @@
 				<div class="right-uf">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></div>
 			</div>
 		</footer>-->
-	</div>
+
 	<script type="text/javascript">
 		$('.flower-select').click(function () {
 			$('.flower-select').not(this).removeClass('bouquets__link-b--checked');
