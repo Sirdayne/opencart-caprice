@@ -172,7 +172,8 @@
 						<div class="bouquets__links">
 							<div>
 								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">пионы</span>
+                                    <!-- пионы -->
+				                    <a href="index.php?route=product/category&path=59&filter=8"><span class="bouquets__link">гвоздики</span></a>
 								</div>
 								<div class="bouquets__link-b bouquets__link-b--price price-select">
 									<span class="bouquets__link">до 5000 тг.</span>
@@ -180,7 +181,8 @@
 							</div>
 							<div>
 								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">розы</span>
+								    <!-- розы -->
+									<a href="index.php?route=product/category&path=59&filter=9"><span class="bouquets__link">сирень</span></a>
 								</div>
 								<div class="bouquets__link-b bouquets__link-b--price price-select">
 									<span class="bouquets__link">до 8000 тг.</span>
@@ -188,7 +190,8 @@
 							</div>
 							<div>
 								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">лилии</span>
+								    <!-- лилии -->
+									<a href="index.php?route=product/category&path=59&filter=6"><span class="bouquets__link">тюльпаны</span></a>
 								</div>
 								<div class="bouquets__link-b bouquets__link-b--price price-select">
 									<span class="bouquets__link">до 10000 тг.</span>
@@ -197,7 +200,8 @@
 
 							<div>
 								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">ромашки</span>
+								    <!-- ромашки -->
+									<a href="index.php?route=product/category&path=59&filter=7"><span class="bouquets__link">хризантемы</span></a>
 								</div>
 								<div class="bouquets__link-b bouquets__link-b--price price-select">
 									<span class="bouquets__link">до 15000 тг.</span>
@@ -205,7 +209,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="" class="bouquets-search-link">найти</a>
+					<a href="http://localhost/opencart/index.php?route=product/category&path=59" class="bouquets-search-link">найти</a>
 				</div>
 			</div>
 		</section>

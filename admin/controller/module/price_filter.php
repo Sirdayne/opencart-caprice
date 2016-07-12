@@ -66,9 +66,24 @@ class ControllerModulePriceFilter extends Controller {
 		}
 		
 		if (isset($this->request->post['price_filter_range'])) {
-			$data['price_filter_range'] = $this->request->post['price_filter_range'];
-		} else {
+			//$data['price_filter_range'] = $this->request->post['price_filter_range'];
 			$data['price_filter_range'] = $this->config->get('price_filter_range');
+			$new_variable = $this->db->query("SELECT MIN(price) as price FROM oc_product");
+			$min_price = $new_variable->row['price'];
+			$min_price = (int)$min_price;
+			$new_variable2 = $this->db->query("SELECT MAX(price) as price FROM oc_product");
+			$max_price = $new_variable2->row['price'];
+			$max_price = (int)$max_price;
+			$data['price_filter_range'] = $min_price.'-'.$max_price;
+		} else {
+			//$data['price_filter_range'] = $this->config->get('price_filter_range');
+			$new_variable = $this->db->query("SELECT MIN(price) as price FROM oc_product");
+			$min_price = $new_variable->row['price'];
+			$min_price = (int)$min_price;
+			$new_variable2 = $this->db->query("SELECT MAX(price) as price FROM oc_product");
+			$max_price = $new_variable2->row['price'];
+			$max_price = (int)$max_price;
+			$data['price_filter_range'] = $min_price.'-'.$max_price;
 		}
 		
 		if (isset($this->request->post['price_filter_class'])) {

@@ -2,6 +2,7 @@
  
 
 <!-- IT WAS THIS - <div class="container"> -->
+<!--
 <div class="container-con">
  
   <ul class="breadcrumb">
@@ -144,6 +145,91 @@
       </form>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
-</div>
+</div> -->
 
+
+
+     <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
+	<link rel="stylesheet" href="catalog/view/theme/default/css/animate.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="http://e-timer.ru/js/etimer.js"></script>
+
+		<adress>
+			<div class="adress-holder clearfix">
+                <div class="adr-box"><span class="adr-icon">Адрес:</span><p>г. Астана, ул. Б.Момышулы, <br>д.2в, ЖК "Ак Шанырак"</p></div>
+                <div class="adr-box"><span class="tel-icon">Телефон:</span><p>+7 (771) 9115050 <br>+7 (7172) 265050</p></div>
+                <div class="adr-box"><span class="email-icon">E-mail:</span><p>tvoy@kapriz-astana.com</p></div>
+                <div class="adr-box">
+                    <span>Мы в соц сетях</span>
+                    <div class="social-contacts">
+                        <a href="#" class="inst">instagram</a>
+                        <a href="#" class="twit">twitter</a>
+                        <a href="#" class="fb">facebook</a>
+                        <a href="#" class="vk">vkontakte</a>
+                    </div>
+                </div>
+            </div>
+		</adress>
+        <section class="mapandq">
+            <div class="mapandq-wrap clearfix">
+                <div class="map-border">
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6AK3W74tP9D-r_wK_HRsTKXUHTs7Ovxu&width=100%&height=360&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+                    </div>
+                </div>
+                <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <div class="question">
+                   
+                    <span class="surak-title">Остались вопросы?</span>
+                    
+                    <!--<label class="col-sm-2 control-label" for="input-name"><?php echo $entry_name; ?></label>-->
+                    <input type="text" name="name"  class="input-name" placeholder="ИМЯ" value="<?php echo $name; ?>" id="input-name" class="form-control">
+                    <?php if ($error_name) { ?>
+                    <div class="text-danger"><?php echo $error_name; ?></div>
+                    <?php } ?>
+                    
+                    <!--<label class="col-sm-2 control-label" for="input-email"><?php echo $entry_email; ?></label>-->
+                    <input type="text" name="email" class="input-tel" placeholder="EMAIL ИЛИ ТЕЛЕФОН" value="<?php echo $email; ?>" id="input-email" class="form-control">
+                    <?php if ($error_email) { ?>
+                    <div class="text-danger"><?php echo $error_email; ?></div>
+                    <?php } ?>
+                    
+                    <!--<label class="col-sm-2 control-label" for="input-enquiry"><?php echo $entry_enquiry; ?></label>-->
+                    <textarea name="enquiry" cols="30" class="input-tarea" rows="10" placeholder="СООБЩЕНИЕ"  id="input-enquiry" class="form-control"><?php echo $enquiry; ?></textarea>
+                    <?php if ($error_enquiry) { ?>
+                    <div class="text-danger"><?php echo $error_enquiry; ?></div>
+                    <?php } ?>
+                    
+                    <!--<a href="#" class="button button-dark">отправить</a>-->
+                    <?php echo $captcha; ?>
+                    <input class="button button-dark button-width-imp" type="submit" value="<?php echo $button_submit; ?>" />
+                 
+                </div>
+                </form>
+            </div>
+        </section>
+        
+        <div class="mfc-holder">
+			<div class="m-footer-contacts m-footer-contacts-dark">
+				<p class="social">Мы в соц сетях</p>
+				<div class="social-block clearfix">
+					<a href="#" class="inst">instagram</a>
+					<a href="#" class="twit">twitter</a>
+					<a href="#" class="fb">facebook</a>
+					<a href="#" class="vk">vkontakte</a>
+				</div>
+				<h6>Контакты</h6>
+				<p class="adr">г.Астана, ул. Б.Момышулы,<br>
+					д.2в, ЖК "Ак Шанырак"<br>
+					График работы: круглосуточно</p>
+				<a href="tel:+77719115050">+7(771) 911 50 50</a>
+				<a href="tel:+77172265050">+7(7172) 26 50 50</a>
+			</div>
+			<div class="trepet trepet-dark trepet-contacts">
+				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+			</div>
+		</div>
+        
+		
 <?php echo $footer; ?>

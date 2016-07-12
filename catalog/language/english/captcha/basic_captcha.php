@@ -3,7 +3,7 @@
 $_['heading_title'] = 'Captcha';
 
 // Entry
-$_['entry_captcha'] = 'Введите код с картинки';
+$_['entry_captcha'] = '';
 
 // Error
-$_['error_captcha'] = 'Неверный код, введите код с картинки!';
+$_['error_captcha'] = 'Неверный код!';

@@ -1,4 +1,4 @@
-
+/*
 @media screen and (max-height: 600px) {
     .hide{
         display: none !important;
@@ -63,5 +63,17 @@
 		text-align: center;
 	}
   
+    
+} */
+
+@media (max-width: 810px) {
+    .m-toptel {
+        margin: 10px 25px auto;
+        float: none;
+    }
+    /*
+    .slider-size{
+        width: 80% !important;
+    }*/
     
 }

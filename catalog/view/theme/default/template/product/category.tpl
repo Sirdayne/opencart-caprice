@@ -15,7 +15,8 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <!--<div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>-->
+    <div id="" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <!--<h2><?php echo $heading_title; ?></h2>-->
       <?php if ($thumb || $description) { ?>
       <div class="row">
@@ -56,7 +57,7 @@
       <?php } ?>
       <?php if ($products) { ?>
      <!-- <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p> -->
-      <div class="row">
+     <!-- <div class="row">
        
         <div class="col-md-4">
           <div class="btn-group hidden-xs">
@@ -92,11 +93,11 @@
             <?php } ?>
           </select>
         </div>
-      </div>
+      </div>-->
       <br />
      <div class="row">
         <?php foreach ($products as $product) { ?>
-        <div class="product-layout product-list col-xs-12">
+        <div class="product-layout col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="product-thumb product-thumb-border">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
@@ -138,10 +139,10 @@
         </div>
         <?php } ?>
       </div>
-      <div class="row">
+      <!--<div class="row">
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
-      </div>
+      </div>-->
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
       <p><?php echo $text_empty; ?></p>
@@ -152,6 +153,32 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+
+
+        <section class="how-find how-find-dark">
+			
+			<div class="find-wrapper clearfix">
+				
+				<div class="m-footer-contacts m-footer-contacts-dark">
+					<p class="social">Мы в соц сетях</p>
+					<div class="social-block clearfix">
+						<a href="#" class="inst">instagram</a>
+						<a href="#" class="twit">twitter</a>
+						<a href="#" class="fb">facebook</a>
+						<a href="#" class="vk">vkontakte</a>
+					</div>
+					<h6>Контакты</h6>
+					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
+						д.2в, ЖК "Ак Шанырак"<br>
+						График работы: круглосуточно</p>
+					<a href="tel:+77719115050">+7(771) 911 50 50</a>
+					<a href="tel:+77172265050">+7(7172) 26 50 50</a>
+				</div>
+			</div>
+			<div class="trepet trepet-dark">
+				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+			</div>
+		</section>
 
 
 <?php echo $footer; ?>

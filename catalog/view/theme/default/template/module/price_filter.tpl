@@ -7,9 +7,9 @@
 			</div>
 		</div>
 	</div>	
-	<div class="panel-footer text-right">
+	<!--<div class="panel-footer text-right">
 		<button type="button" id="button-price-filter" class="btn btn-primary"><?php echo $button_filter; ?></button>
-	</div>
+	</div>-->
 </div>
 
 <script type="text/javascript">
@@ -34,12 +34,13 @@ $("#scale-slider")
     .slider("float");
 (function( $ ) {
   $(function() {
-    $('#button-price-filter').on('click', function() {
+    $('.ui-slider-handle').on('mousedown', function() {   
+      $('body').on('mousemove', function() {
 		
 		priceRange = [];
 		$('#scale-slider .ui-slider-tip').each(function(){
 			priceRange.push($(this).html());
-		});
+		}); 
 		
 		$('.<?php echo $product_class; ?>').hide();
 		$('.clearfix').remove();
@@ -58,12 +59,14 @@ $("#scale-slider")
 			
 			price = parseInt(price);
 			
-			if( !isNaN(price) && (price > priceRange[0] && price < priceRange[1]) ){
-				$(this).fadeIn("slow");
+			if( !isNaN(price) && (price >= priceRange[0] && price <= priceRange[1]) ){
+				$(this).show();
 			}
 		});
 		
-	});
+	   });
+      
+    });
   });
 })(jQuery);
 

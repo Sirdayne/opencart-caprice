@@ -1,4 +1,4 @@
-.container{
+/*.container{
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
@@ -12,7 +12,7 @@
   width: 926px;
 }
 
-/*
+
 .cart{
     width: 300px;
     
@@ -27,6 +27,15 @@
 }*/
 
 /* ~~~~ changes in style.css ~~~~ */
+
+.container, .container-con{
+  width: 80%;
+}
+
+.bouquets-b {
+    margin-left: -20px;
+    margin-right: -20px;
+}
 
 .logo-pink{
     background: url(../img/logo-pink.png) center center no-repeat;
@@ -43,6 +52,83 @@
     background-size: 100%;
 }
 
+.m-logo-top{
+    height: 90px;
+    width: 90px;
+}
+
+.m-logo-top-dark{
+    background: url(../img/logo-kapriz-dark.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.button-width-imp{
+    width: 150px !important;
+}
+
+.cart-width{
+    width: 150px;
+}
+
+.slider-padding{
+    padding-top: 40px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.slider-padding h4{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.slider-padding a{
+    color: #FFF;
+}
+
+.slider-size{
+    width: 100%;
+}
+
+
+.button-custom{
+	background: rgba(255,255,255,1) !important;
+	border: 0px solid rgba(255,255,255,1) !important;	
+}
+
+.button-custom button{
+	background: rgba(255,255,255,1) !important;
+	border: 0px solid rgba(255,255,255,1) !important;	
+}
+
+.button-custom .fa-shopping-cart{
+	color: rgba(203,84,131,1) !important;
+}
+
+button#list-view, button#grid-view{
+    visibility: hidden;
+}
+
+.text-align-product{
+	text-align:center !important;
+}
+
+
+.price-basket, .option{
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    letter-spacing: .6px;
+    padding: 8px;
+    
+    color:#3F3F3F !important;
+    background: #fff !important;
+    border: 0.5px solid #3F3F3F !important;
+    
+    transition: all .1s linear;
+} 
+
+
+/*
 .price-basket, .option{
     margin: 10px;
     border-radius: 25px;
@@ -211,6 +297,8 @@ input:checked + span{
 }
 
 /* goods */
+
+/*
 .showcase{
     display: inline-block;
     
@@ -221,15 +309,7 @@ input:checked + span{
     border: 1px solid #ddd;
 }
 
-.slider-padding{
-    padding-top: 40px;
-    color: #FFF;
-    font-size: 14px;
-}
-
-.slider-padding a{
-    color: #FFF;
-}
+*/
 /*   ИКОНКИ ПОЯВЛЕНИЕ
 .product-thumb:hover .fa{
     display: block;
@@ -240,6 +320,7 @@ input:checked + span{
     transition: 5s linear;
 }*/
 
+/*
 .button-custom{
 	background: rgba(255,255,255,1) !important;
 	border: 0px solid rgba(255,255,255,1) !important;	
@@ -258,11 +339,6 @@ button#list-view, button#grid-view{
     visibility: hidden;
 }
 
-
-.text-align-product{
-	text-align:center !important;
-}
-
 .how-find a{
     margin-bottom: 200px;
 }
@@ -275,6 +351,11 @@ button#list-view, button#grid-view{
     line-height: 20px;
 }
 
-.slider-size img{
-
+.spoiler_body-2{
+    max-height: 0;
+    overflow: hidden;
+    transition: 5s ease-in;
 }
+.spoiler_check:hover + .spoiler_body-2{
+    max-height: 8000px;
+} */

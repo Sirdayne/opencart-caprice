@@ -6,6 +6,18 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script src="http://e-timer.ru/js/etimer.js"></script>
     
+    <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/modal.css"> 
+
+    <div class="modal-back"></div>
+
+        <div class="modal-1">
+               <div class="deny-1">X</div>
+               
+        </div>
+
+
+
+    
 		<!--<header>
 			<div class="content-holder">
 				<div class="header-top header-top-fd">
@@ -60,7 +72,7 @@
                 <div class="flower-box">
                     <div class="desc-box">
                         <h2><span>Украсить</span> искусственными цветами</h2>
-                        <a href="#" class="button button-dark">заказать</a>
+                        <a class="button button-dark block-1">заказать</a>
                     </div>
                 </div>
                 <div class="box">
@@ -277,6 +289,8 @@
                 $(this).parent().find('.box svg line.right').css("transform","translateY(0)");
             }
         );
+        
+        
 	</script>
 
 

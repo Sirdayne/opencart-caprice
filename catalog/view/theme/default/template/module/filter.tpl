@@ -1,9 +1,18 @@
-<div class="panel panel-default">
+<link rel="stylesheet" href="catalog/view/theme/default/stylesheet/my_style.css"> 
+ 
+
+ <div class="panel panel-default">
   <div class="panel-heading spoiler_links-1 spoiler-cursor"><?php echo $heading_title; ?></div>
   <div class="list-group spoiler_body-1">
     <?php foreach ($filter_groups as $filter_group) { ?>
-    <a class="list-group-item spoiler_links-2 spoiler-cursor"><?php echo $filter_group['name']; ?></a>
-    <div class="list-group-item spoiler_body-2">
+    
+    <div class="list-group-item">
+    <div class="checkbox">
+    <label class="checking">
+    <input type="checkbox" class="spoiler_check" checked="checked">
+     <?php echo $filter_group['name']; ?>
+     
+     <div class="list-group-item spoiler_body-2">
       <div id="filter-group<?php echo $filter_group['filter_group_id']; ?>">
         <?php foreach ($filter_group['filter'] as $filter) { ?>
         <div class="checkbox">
@@ -19,6 +28,9 @@
         </div>
         <?php } ?>
       </div>
+      </div>
+      </label>
+    </div>
     </div>
     <?php } ?>
   </div>

@@ -18,6 +18,10 @@
     color: #FFF !important;
 }
 
+.nav-fd-white>ul>li>ul>li>a:hover{
+    color: #E95386 !important;
+}
+
 .dropdown-arrow:after {
   border-left: 1px solid #fff !important;
   border-bottom: 1px solid #fff !important;

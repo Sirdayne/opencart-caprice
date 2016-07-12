@@ -70,11 +70,14 @@
 				</div>
 				<div class="slider__item__shadow"></div>
         </div>
+        product-layout 
+        product-thumb 
+        transition
     -->
-<div class="row slider block-in">
+<div class="slider block-in">
   <?php foreach ($products as $product) { ?>
-  <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12 slider__item">
-    <div class="product-thumb transition">
+  <div class="slider__item">
+    <div class="">
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive slider__item__img" /></a></div>
       <!--<div class="caption">-->
        <div class="slider__item__discount slider-padding animated zoomInLeft">
@@ -114,17 +117,17 @@
 					<div class="composition animated bounceInRight">
 						<div class="composition__count">3</div>
 						<div class="composition__text">розы</div>
-						<div class="composition__border"></div>
+						
 					</div>
 					<div class="composition animated bounceInRight composition-delay-fir">
 						<div class="composition__count">5</div>
 						<div class="composition__text">хризантем</div>
-						<div class="composition__border"></div>
+						
 					</div>
 					<div class="composition animated bounceInRight composition-delay-sec">
 						<div class="composition__count">3</div>
 						<div class="composition__text">ромашки</div>
-						<div class="composition__border"></div>
+						
 					</div>
 				</div>
       <div class="slider__item__shadow"></div>

@@ -7,7 +7,8 @@
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title><?php echo $title; ?></title>
 <base href="<?php echo $base; ?>" />
@@ -26,13 +27,48 @@
 
 <!-- MY STYLES ARE HERE-->
 
-	<link rel="stylesheet" href="catalog/view/theme/default/stylesheet/my_style.css"> 
-	<link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptive.css"> 
+    <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/my_style.css"> 
+    <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptive.css">
 	
 	
-	<link rel="stylesheet" href="catalog/view/theme/default/css/style.css"> 
-
-
+	<link rel="stylesheet" href="catalog/view/theme/default/css/style2.css"> 
+    <link rel="stylesheet" href="catalog/view/theme/default/css/media2.css">
+	<link rel="stylesheet" href="catalog/view/theme/default/css/animate.min.css">
+	
+	
+	 <script type="text/javascript" src="catalog/view/theme/default/js/skrollr.js"></script>
+	
+      <!-- PARALLAX EFFECT CHECKS STARTS CONDITIONS ПАРАЛЛАКС ЗАПУСК УСЛОВИЯ -->
+       <script type="text/javascript">
+    	$(function () {
+			if ($(window).width() > 991) {
+				(function ($) {
+					var s = skrollr.init({
+						render: function (data) {}
+					});
+				})(jQuery);
+			}
+			$(window).on('resize', function () {
+				if ($(window).width() <= 974) {
+					$('.block1').addClass('notrans');
+					$('.block2').addClass('notrans');
+					$('.block3').addClass('notrans');
+					$('.block4').addClass('notrans');
+				}
+				else {
+					(function ($) {
+						var s = skrollr.init({
+							render: function (data) {}
+						});
+					})(jQuery);
+					$('.block1').removeClass('notrans');
+					$('.block2').removeClass('notrans');
+					$('.block3').removeClass('notrans');
+					$('.block4').removeClass('notrans');
+				}
+			});
+		});
+    </script>
 
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
@@ -48,34 +84,90 @@
 <?php echo $analytic; ?>
 <?php } ?>
 </head>
-<body class="<?php echo $class; ?>">
+<body class="<?php echo $class; ?> dark">
 
-
-<!-- HEADER CART КОРЗИНА 
-<section id="#header">
-     <div class="cart">
-
-            <?php echo $cart; ?>
-
-
-        <div class="option">
-            <a href="#">подобрать букет</a>
-        </div>
-
-    </div>
-    
-    <div class="header-logo--kapriz"></div>
-    
-    <div class="header-address">
-            <p>Наш адрес: г.Астана, ул.Б.Момышулы,</p>
-            <p>д.2в, ЖК "Ак Шанырак"</p>
-            <p>График работы: круглосуточно</p>
-            <h4>Тел.:+7(771)9115050</h4>
-            <h4>Тел.:8(7172)265050</h4>
-    </div>
-    
-    
-</section> -->
+	<button class="m-toggle-menu toggle-menu-dark toggle-menu-white"><span></span></button>
+	<div class="m-menu">
+		<ul class="m-menu-ul">
+			<li><a href="index.php?route=common/mainhome">О компании</a></li>
+			<li>
+				<a class="link-with-circle">Услуги<span class="circle"></span></a>
+				<ul class="sec-menu">
+					<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
+					<li><a href="index.php?route=common/photosessionon">Фотосессия</a></li>
+					<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
+					<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
+				</ul>
+			</li>
+			<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="index.php?route=information/contact">Контакты</a></li>
+		</ul>
+	</div>
+  
+  <div class="wrapper white-wrapper">
+		<header>
+			<div class="content-holder">
+				<div class="header-top header-top-fd">
+					<div class="block">
+						<!--<a href="#" class="button button-dark"><span class="basket-icon"></span>корзина (2)</a>-->
+						<section id="#header" class="cart-width">
+						    <?php echo $cart; ?>
+                        </section>
+						<a href="index.php?route=product/category&path=59" class="button button-dark">подобрать букет</a>
+					</div>
+					<div class="block center">
+						<span class="logo-block logo-pink logo-white">
+						<!--<img src="catalog/view/theme/default/img/logo-pink.png" alt=""/>-->
+						</span>
+					</div>
+					<div class="block">
+						<address class="adress adress-dark adress-white">
+						  Наш адрес: г. Астана, ул. Б.Момышулы, <br>
+						  д.2в, ЖК "Ак Шанырак"<br>
+						  График работы: круглосуточно<br>
+						  <span>Тел.: +7 (771) 9115050</span><br>
+						  <span>Тел.: +7 (7172) 265050</span>
+						</address>
+					</div>
+				</div>
+				<nav class="nav-fd nav-fd-white">
+					<ul>
+						<li><a href="index.php?route=common/mainhome">О компании</a></li>
+						<li><p class="dropdown-arrow active-menu">Услуги</p>
+							<ul>
+								<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
+								<li><a href="index.php?route=common/photosessionon">Фотосессия</a></li>
+								<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
+								<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
+							</ul>
+						</li>
+						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="index.php?route=information/contact">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content-holder-mobile">
+				<div class="m-fir-header clearfix">
+					    <div class="m-logo-top m-logo-top-dark m-logo-top-white">
+					        <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="">-->
+					    </div>
+					<div class="m-rbox">
+						<a href="index.php?route=checkout/cart" class="m-basket m-basket-white"></a>
+						<a href="index.php?route=product/category&path=59" class="button button-dark button-bas-white">подобрать букет</a>
+						<div class="clearfix">
+							<div id="toptel" class="m-toptel m-toptel-dark m-toptel-white">
+								<a href="tel:+77719115050">+7(771)9115050</a>
+								<a href="tel:+77172265050">+7(7172)265050</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+   
+   <!--
     <div class="wrapper white-wrapper">
         <header>
 			<div class="content-holder">
@@ -111,89 +203,12 @@
 							</ul>
 						</li>
 						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
-						<li><a href="index.php?route=common/maincatalog">Доставка</a></li>
+						<li><a href="index.php?route=common/contacts">Доставка</a></li>
 						<li><a href="index.php?route=information/contact">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-
-
-<!-- ВИТРИНА
-
-<div class="navigation-line">
-    <div class="nav-line"></div>
-</div> -->
-
-<!-- РЕГИСТРАЦИЯ REGISTRATION index.php?route=account/register 
-<div class="navigation"> 
-       
-        <div class="nav"><a href="index.php?route=information/information&information_id=9">О КОМПАНИИ</a></div>
-        <div class="nav"><a href="index.php?route=information/information&information_id=7">УСЛУГИ</a></div>
-        <div class="nav"><a href="index.php">БУКЕТЫ</a></div>
-        <div class="nav"><p>ДОСТАВКА</p></div>
-        <div class="nav"><a href="index.php?route=information/information&information_id=8">КОНТАКТЫ</a></div>
-</div>-->
-
-
-
-<!-- Серая панель валюта пользователь профиль корзина личный кабинет закладки -->
-<!--<nav id="top">
-  <div class="container">
-    <?php echo $currency; ?>
-    <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
-
-
-<!-- Категории фильтрация фильтры -->
-<!--
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="logo">
-          <?php if ($logo) { ?>
-          <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
-          <?php } else { ?>
-          <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
-          <?php } ?>
-        </div>
-      </div>
-      
-      Корзина
-      <div class="col-sm-3"><?php echo $cart; ?></div>
-      
-       Поиск
-      <div class="col-sm-5"><?php echo $search; ?>
-      </div>
-      
-    </div>
-  </div>
-</header> -->
-
 
 
 <!-- Категории фильтрация фильтры -->
