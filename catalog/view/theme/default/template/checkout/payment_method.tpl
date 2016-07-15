@@ -1,4 +1,4 @@
-    <!-- M Y M Y M Y M Y M Y M Y M Y M Y M Y M Y   -->
+    <!-- M Y M Y M Y M Y M Y M Y M Y M Y M Y M Y  
 <script>
  $(document).ready(function(){
  setTimeout(function(){
@@ -46,7 +46,7 @@
     
     <!-- M Y M Y M Y M Y M Y M Y M Y M Y M Y M Y   -->
     <input type="checkbox" name="agree" value="1" checked="checked" />
-        <!-- M Y M Y M Y M Y M Y M Y M Y M Y M Y M Y   -->
+    <!-- M Y M Y M Y M Y M Y M Y M Y M Y M Y M Y   -->
     
     &nbsp;
     <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />

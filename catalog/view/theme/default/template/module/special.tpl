@@ -44,47 +44,21 @@
 
 <!-- SLIDER in common/service
 
-<div class="slider__item">
-				<a href=""><img src="catalog/view/theme/default/img/flower.png" class="slider__item__img" /></a>
-				<div class="slider__item__discount animated zoomInLeft">
-					<span class="dct-title-small">акция на букет</span>
-					<span class="dct-title-big">каприз</span>
-					<span class="dct-title-price">3500тг.</span>
-				</div>
-				<div class="composition-b">
-					<div class="composition animated bounceInRight">
-						<div class="composition__count">3</div>
-						<div class="composition__text">розы</div>
-						<div class="composition__border"></div>
-					</div>
-					<div class="composition animated bounceInRight composition-delay-fir">
-						<div class="composition__count">5</div>
-						<div class="composition__text">хризантем</div>
-						<div class="composition__border"></div>
-					</div>
-					<div class="composition animated bounceInRight composition-delay-sec">
-						<div class="composition__count">3</div>
-						<div class="composition__text">ромашки</div>
-						<div class="composition__border"></div>
-					</div>
-				</div>
-				<div class="slider__item__shadow"></div>
-        </div>
-        product-layout 
-        product-thumb 
-        transition
+
     -->
 <div class="slider block-in">
   <?php foreach ($products as $product) { ?>
   <div class="slider__item">
     <div class="">
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive slider__item__img" /></a></div>
+      <div class="image"><a href="<?php echo $product['href']; ?>">
+      <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive slider__item__img" />
+      </a></div>
       <!--<div class="caption">-->
        <div class="slider__item__discount slider-padding animated zoomInLeft">
        <p>акция на букет</p>
-        <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-       <!-- <p><?php echo $product['description']; ?></p> 
-        <?php if ($product['rating']) { ?>
+        <h3><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
+     <!--     <p><?php echo $product['description']; ?></p> 
+      <?php if ($product['rating']) { ?>
         <div class="rating">
           <?php for ($i = 1; $i <= 5; $i++) { ?>
           <?php if ($product['rating'] < $i) { ?>
@@ -113,25 +87,36 @@
         <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
         <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
       </div>-->
+      <!--
+    
+      -->
+      
+      
       <div class="composition-b">
-					<div class="composition animated bounceInRight">
-						<div class="composition__count">3</div>
-						<div class="composition__text">розы</div>
-						
-					</div>
-					<div class="composition animated bounceInRight composition-delay-fir">
-						<div class="composition__count">5</div>
-						<div class="composition__text">хризантем</div>
-						
-					</div>
-					<div class="composition animated bounceInRight composition-delay-sec">
-						<div class="composition__count">3</div>
-						<div class="composition__text">ромашки</div>
-						
-					</div>
-				</div>
+      <?php if($product['attribute_groups']) { ?>
+                <?php foreach($product['attribute_groups'] as $attribute_group) { ?>
+                    <?php if(!strpos($attribute_group['name'], "—")) {?>
+                       
+                        <?php foreach($attribute_group['attribute'] as $attribute) { ?>
+                            <div class="composition animated bounceInRight animationflower">
+                              <!--  <div class="composition__count">  
+                                   <?php echo $attribute['text']; ?>
+                                </div>  -->
+                                <div class="composition__text">
+                                    <?php echo $attribute['name']; ?>
+                                </div>
+                                
+                            </div>
+                        <?php } ?>
+                       
+                    <?php } ?>
+                <?php } ?>
+            <?php } ?>
+      </div>
       <div class="slider__item__shadow"></div>
+      
     </div>
   </div>
   <?php } ?>
 </div>
+

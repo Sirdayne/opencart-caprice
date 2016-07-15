@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptive.css">
 	
 	
-	<link rel="stylesheet" href="catalog/view/theme/default/css/style2.css"> 
-    <link rel="stylesheet" href="catalog/view/theme/default/css/media2.css">
+	<link rel="stylesheet" href="catalog/view/theme/default/css/style.css"> 
+    <link rel="stylesheet" href="catalog/view/theme/default/css/media.css">
 	<link rel="stylesheet" href="catalog/view/theme/default/css/animate.min.css">
 	
 	
@@ -85,7 +85,9 @@
 <?php } ?>
 </head>
 <body class="<?php echo $class; ?> dark">
-
+    
+    
+    
 	<button class="m-toggle-menu toggle-menu-dark toggle-menu-white"><span></span></button>
 	<div class="m-menu">
 		<ul class="m-menu-ul">
@@ -114,7 +116,7 @@
 						<section id="#header" class="cart-width">
 						    <?php echo $cart; ?>
                         </section>
-						<a href="index.php?route=product/category&path=59" class="button button-dark">подобрать букет</a>
+						<a href="index.php?route=product/category&path=59" class="button button-dark" id="buttonx">подобрать букет</a>
 					</div>
 					<div class="block center">
 						<span class="logo-block logo-pink logo-white">
@@ -166,51 +168,6 @@
 				</div>
 			</div>
 		</header>
-   
-   <!--
-    <div class="wrapper white-wrapper">
-        <header>
-			<div class="content-holder">
-				<div class="header-top header-top-fd">
-					<div class="block">
-					    <section id="#header" class="cart-width">
-						    <?php echo $cart; ?>
-                        </section>
-						<a href="#" class="button button-dark">подобрать букет</a>
-					</div>
-					<div class="block center">
-						<span class="logo-block logo-white logo-pink"></span>
-					</div>
-					<div class="block">
-						<address class="adress adress-dark adress-white">
-						  Наш адрес: г. Астана, ул. Б.Момышулы, <br>
-						  д.2в, ЖК "Ак Шанырак"<br>
-						  График работы: круглосуточно<br>
-						  <span>Тел.: +7 (771) 9115050</span><br>
-						  <span>Тел.: +7 (7172) 265050</span>
-						</address>
-					</div>
-				</div>
-				<nav class="nav-fd nav-fd-white">
-					<ul>
-						<li><a href="index.php?route=common/service">О компании</a></li>
-						<li><a href="index.php?route=common/service" class="dropdown-arrow active-menu">Услуги</a>
-							<ul>
-								<li><a href="index.php?route=common/weddingdecor">Свадебный декор</a></li>
-								<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
-								<li><a href="index.php?route=common/datesdecor">Оформление свиданий</a></li>
-								<li><a href="index.php?route=common/eventdecor">Оформление мероприятий</a></li>
-							</ul>
-						</li>
-						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
-						<li><a href="index.php?route=common/contacts">Доставка</a></li>
-						<li><a href="index.php?route=information/contact">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-
 <!-- Категории фильтрация фильтры -->
 
 <?php if ($categories) { ?>

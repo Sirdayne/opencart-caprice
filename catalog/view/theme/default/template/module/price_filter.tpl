@@ -1,7 +1,8 @@
-<div class="sidebarFilter panel panel-default">
-  <div class="panel-heading spoiler_links spoiler-cursor"><?php echo $heading_title; ?></div>
-	<div class="list-group spoiler_body">
-		<div class="list-group-item">
+<div class="sidebarFilter panel panel-default padding-zero">
+  <div class="panel-heading spoiler_links-1 spoiler-cursor padding-zero spoiler-animation-2"><?php echo $heading_title; ?></div>
+      <div class="spoiler-square-2 spoiler-square-animation-2"></div>
+	<div class="list-group spoiler_body-1">
+		<div class="list-group-item padding-zero">
 			<div id="filter-group1">
 				<div id="scale-slider"></div>
 			</div>
@@ -65,9 +66,11 @@ $("#scale-slider")
 		});
 		
 	   });
-      
     });
+      
+        $('.ui-slider-tip').show();
   });
 })(jQuery);
 
 </script>
+

@@ -13,7 +13,7 @@
     /* labels/pips individually later */
     .ui-slider-pips .ui-slider-label,
     .ui-slider-pips .ui-slider-pip-hide { 
-        display: none; 
+        /* display: none;*/
     }
 
     /* now we show any labels that we've set to show in the options */
@@ -132,7 +132,7 @@
     .ui-slider-float .ui-slider-tip-label {
 
         position: absolute;
-        visibility: hidden;
+      /*  visibility: hidden;*/
         top: -40px;
         display: block;
         width: 34px;
@@ -145,7 +145,7 @@
         border: 1px solid #888;
         text-align: center;
         font-size: 12px;
-        opacity: 0;
+      /*  opacity: 0; */
         color: #333;
 
         -webkit-transition-property: opacity, top, visibility;

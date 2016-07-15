@@ -13,12 +13,12 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?> margin-top"><?php echo $content_top; ?>
       <div class="row">
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
         <?php } else { ?>
-        <?php $class = 'col-sm-8'; ?>
+        <?php $class = 'col-sm-4 col-sm-offset-3'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
           <?php if ($thumb || $images) { ?>
@@ -116,12 +116,12 @@
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
         <?php } else { ?>
-        <?php $class = 'col-sm-4'; ?>
+        <?php $class = 'col-sm-2'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
           <div class="btn-group">
-            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
-            <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button> -->
+            <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
+            <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button> -->
           </div>
           <h1><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
@@ -141,9 +141,10 @@
               <h2><?php echo $price; ?></h2>
             </li>
             <?php } else { ?>
-            <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+        <!--    <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li> -->
+            <li><span><?php echo $price; ?></span></li>
             <li>
-              <h2><?php echo $special; ?></h2>
+           <!--   <h2><?php echo $special; ?></h2> -->
             </li>
             <?php } ?>
             <?php if ($tax) { ?>
@@ -305,7 +306,8 @@
               <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
               <br />
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+          <!--    <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button> -->
+              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="button button-dark"><?php echo $button_cart; ?></button>
             </div>
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
@@ -468,7 +470,7 @@ $('#button-cart').on('click', function() {
 
 				$('#cart > button').html('<i class="fa fa-shopping-cart"></i> ' + json['total']);
 
-				$('html, body').animate({ scrollTop: 0 }, 'slow');
+		/*	$('html, body').animate({ scrollTop: 0 }, 'slow'); */
 
 				$('#cart > ul').load('index.php?route=common/cart/info ul li');
 			}
@@ -598,4 +600,31 @@ $(document).ready(function() {
 	});
 });
 //--></script>
+
+
+ <section class="how-find how-find-dark">
+			
+			<div class="find-wrapper clearfix">
+				
+				<div class="m-footer-contacts m-footer-contacts-dark">
+					<p class="social">Мы в соц сетях</p>
+					<div class="social-block clearfix">
+						<a href="#" class="inst">instagram</a>
+						<a href="#" class="twit">twitter</a>
+						<a href="#" class="fb">facebook</a>
+						<a href="#" class="vk">vkontakte</a>
+					</div>
+					<h6>Контакты</h6>
+					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
+						д.2в, ЖК "Ак Шанырак"<br>
+						График работы: круглосуточно</p>
+					<a href="tel:+77719115050">+7(771) 911 50 50</a>
+					<a href="tel:+77172265050">+7(7172) 26 50 50</a>
+				</div>
+			</div>
+			<div class="trepet trepet-dark">
+				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+			</div>
+		</section>
+
 <?php echo $footer; ?>

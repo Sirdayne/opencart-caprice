@@ -1,9 +1,31 @@
 <?php echo $header; ?>
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	    
     	<script src="http://e-timer.ru/js/etimer.js"></script>
-    
+    	
+   
+    <div class="md-modal md-effect-1 consult-modal" id="modal-1">							
+		<div class="md-content">															
+			<span class="consult-title">Подсказать вам в выборе услуги?</span>	
+            <form method="post" action="">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="kapriz.kz">
+            <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
+            <input type="hidden" name="form_subject" value="Консультация">	
+             <!-- END Hidden Required Fields -->
+            		
+			<input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон"><!-- NEW LINE !!! -->
+			<!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
+			<button type="submit" class="button button-dark">заказать звонок</button>      	
+        </form>				
+		</div>																				
+	</div>	
+																					
+	<a  class="consult-btn md-trigger" data-modal="modal-1">консультация</a>		
+          
+                        
+    	
 		<div class="header-picture">
 			<div class="header-picture-desc hpd-3">
 				<h1>Фотосессия</h1>
@@ -58,19 +80,23 @@
 			</div>
 		</section>
 		-->
-			<section class="portfolio clearfix">
+		       
+        <section class="portfolio clearfix">
 			<h3>Галерея</h3>
-			<div class="row">
+			<div class="">
+               
                 <?php echo $column_left; ?>
                 <?php if ($column_left && $column_right) { ?>
-                <?php $class = 'col-sm-3'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } elseif ($column_left || $column_right) { ?>
-                <?php $class = 'col-sm-9'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } else { ?>
-                <?php $class = 'col-sm-12 col-xs-9'; ?>
+                <?php $class = 'col-sm-12 col-xs-12'; ?>
                 <?php } ?>
-                <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
-                <?php echo $column_right; ?>
+                <div id="" class="<?php echo $class; ?>">
+                    <div class="swiper-border"></div>
+                    <?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+                    <?php echo $column_right; ?>
               </div>
 		</section>
 		
@@ -156,6 +182,13 @@
 			</div>
 		</section>
 
+       
+        <div class="md-overlay"></div> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/classie.js"></script> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/modalEffects.js"></script> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/maskedinput.js"></script> <!-- NEW LINE-->
+       
+       
         <script type="text/javascript">
 		
 		$('.flower-select').click(function () {
@@ -167,14 +200,7 @@
 			$(this).toggleClass('bouquets__link-b--checked');
 		});
 
-		$('.mini-slider').slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			centerMode: true,
-			prevArrow: "<button class='mini-slider__prev'></button>",
-			nextArrow: "<button class='mini-slider__next'></button>"
-		});
+		
 
 		$('.services__item').hover(
 				function(){
@@ -232,7 +258,7 @@
 				}
 
 		);
+             jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");}); <!-- NEW LINE !!! -->
     </script>
-        
         
 <?php echo $footer; ?>

@@ -190,7 +190,7 @@
 			$('.price-select').not(this).removeClass('bouquets__link-b--checked');
 			$(this).toggleClass('bouquets__link-b--checked');
 		});
-
+    
 		$('.slider').slick({
 			infinite: true,
 			slidesToShow: 3,
@@ -259,10 +259,84 @@
     	$(function () {
             
             var toptel = document.getElementById('toptel');
-
             toptel.classList.remove("m-toptel-dark");
+            
+            var buttonX = document.getElementById('buttonx');
+            buttonX.classList.remove("button-dark");
+            
+            var priceBasketX = document.getElementById("basketx");
+            priceBasketX.classList.remove("price-basket");
+            priceBasketX.classList.add("price-basket-main");
 
 		});
     </script>
+    
+    
+<script type="text/javascript">
+    	$(function () {
+            
+            var flowerClass = document.getElementsByClassName('animationflower');
+            
+         /*   for 4 FLowers
+            flowerClass[1].classList.add("composition-delay-fir");
+            flowerClass[2].classList.add("composition-delay-sec");
+            
+            flowerClass[4].classList.add("composition-delay-fir");
+            flowerClass[5].classList.add("composition-delay-sec");
+            
+            flowerClass[7].classList.add("composition-delay-fir");
+            flowerClass[8].classList.add("composition-delay-sec");
+            
+            flowerClass[10].classList.add("composition-delay-fir");
+            flowerClass[11].classList.add("composition-delay-sec");*/
+            
+            flowerClass[13].classList.add("composition-delay-fir");
+            flowerClass[14].classList.add("composition-delay-sec");
+            
+            flowerClass[16].classList.add("composition-delay-fir");
+            flowerClass[17].classList.add("composition-delay-sec");
+            
+            flowerClass[19].classList.add("composition-delay-fir");
+            flowerClass[20].classList.add("composition-delay-sec");
+            
+            flowerClass[22].classList.add("composition-delay-fir");
+            flowerClass[23].classList.add("composition-delay-sec");
+            
+            
+            
+             /*   for 5 FLOWERS
+            flowerClass[1].classList.add("composition-delay-fir");
+            flowerClass[2].classList.add("composition-delay-sec");
+            
+            flowerClass[4].classList.add("composition-delay-fir");
+            flowerClass[5].classList.add("composition-delay-sec");
+            
+            flowerClass[7].classList.add("composition-delay-fir");
+            flowerClass[8].classList.add("composition-delay-sec");
+            
+            flowerClass[10].classList.add("composition-delay-fir");
+            flowerClass[11].classList.add("composition-delay-sec");
+            
+            flowerClass[13].classList.add("composition-delay-fir");
+            flowerClass[14].classList.add("composition-delay-sec");~~~~~~~~~~~
+            
+            flowerClass[16].classList.add("composition-delay-fir");
+            flowerClass[17].classList.add("composition-delay-sec");
+            
+            flowerClass[19].classList.add("composition-delay-fir");
+            flowerClass[20].classList.add("composition-delay-sec");
+            
+            flowerClass[22].classList.add("composition-delay-fir");
+            flowerClass[23].classList.add("composition-delay-sec");
+            
+            flowerClass[25].classList.add("composition-delay-fir");
+            flowerClass[26].classList.add("composition-delay-sec");
+            
+            flowerClass[28].classList.add("composition-delay-fir");
+            flowerClass[29].classList.add("composition-delay-sec");*/
+            
+            
+		});
+ </script>
 
 <?php echo $footer; ?>

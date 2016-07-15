@@ -6,6 +6,40 @@
     	<script src="http://e-timer.ru/js/etimer.js"></script>
     
     
+            
+         <!--
+    <div class="md-modal md-effect-1 consult-modal" id="modal-1">					
+		<div class="md-content">															
+			<span class="consult-title">Подсказать вам в выборе услуги?</span>				
+			<input type="tel" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult">
+			<a  class="button button-dark">заказать звонок</a>						
+		</div>																			
+	</div>																				
+	<a  class="consult-btn md-trigger" data-modal="modal-1">консультация</a>		
+          -->
+          
+    
+    <div class="md-modal md-effect-1 consult-modal" id="modal-1">							
+		<div class="md-content">															
+			<span class="consult-title">Подсказать вам в выборе услуги?</span>	
+            <form method="post" action="">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="kapriz.kz">
+            <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
+            <input type="hidden" name="form_subject" value="Консультация">	
+             <!-- END Hidden Required Fields -->
+            		
+			<input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон"><!-- NEW LINE !!! -->
+			<!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
+			<button type="submit" class="button button-dark">заказать звонок</button>      	
+        </form>				
+		</div>																				
+	</div>		
+																				
+	<a  class="consult-btn md-trigger" data-modal="modal-1">консультация</a>		
+          
+                      
+    
 		<div class="header-picture">
 			<div class="header-picture-desc hpd-4">
 				<h1>Свадебный декор</h1>
@@ -167,17 +201,19 @@
 		</section>-->
 		<section class="portfolio clearfix">
 			<h3>Примеры фотозон</h3>
-			<div class="row">
+			<div class="">
                 <?php echo $column_left; ?>
                 <?php if ($column_left && $column_right) { ?>
-                <?php $class = 'col-sm-3'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } elseif ($column_left || $column_right) { ?>
-                <?php $class = 'col-sm-9'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } else { ?>
-                <?php $class = 'col-sm-12 col-xs-9'; ?>
+                <?php $class = 'col-sm-12 col-xs-12'; ?>
                 <?php } ?>
-                <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
-                <?php echo $column_right; ?>
+                <div id="" class="<?php echo $class; ?>">
+                    <div class="swiper-border"></div>
+                    <?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+                    <?php echo $column_right; ?>
               </div>
 		</section>
 		<section class="akciya">
@@ -253,6 +289,12 @@
 			</div>
 		</section>
             
+            
+            
+    <div class="md-overlay"></div> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/classie.js"></script> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/modalEffects.js"></script> <!-- NEW LINE-->
+	<script src="catalog/view/theme/default/js/maskedinput.js"></script> <!-- NEW LINE-->
             
             <script type="text/javascript">
 		
@@ -330,7 +372,11 @@
 				}
 
 		);
+                
+        jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");}); <!-- NEW LINE !!! -->
     </script>
+    
+
 				
 
 

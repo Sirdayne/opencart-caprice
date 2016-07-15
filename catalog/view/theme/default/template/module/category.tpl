@@ -1,4 +1,4 @@
-<div class="list-group">
+<div class="list-group hidden">
   <?php foreach ($categories as $category) { ?>
   <?php if ($category['category_id'] == $category_id) { ?>
   <a href="<?php echo $category['href']; ?>" class="list-group-item active"><?php echo $category['name']; ?></a>
@@ -16,3 +16,9 @@
   <?php } ?>
   <?php } ?>
 </div>
+
+<div class="spoiler_links spoiler-cursor checking-head padding-zero spoiler-animation">
+    <p>ПОКАЗАТЬ ФИЛЬТР</p>
+     <div class="spoiler-square spoiler-square-animation"></div>
+</div>
+<div class="spoiler_body">

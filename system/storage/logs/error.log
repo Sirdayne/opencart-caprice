@@ -343,3 +343,54 @@
 2016-07-12 11:48:31 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
 2016-07-12 11:52:25 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
 2016-07-12 11:52:26 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-12 13:56:44 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-13 6:28:01 - PHP Notice:  Undefined variable: button_back in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 123
+2016-07-13 6:28:01 - PHP Notice:  Undefined variable: button_cart in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 124
+2016-07-13 10:32:51 - PHP Notice:  Undefined index: sort_order in D:\xampp\htdocs\opencart\admin\model\design\banner.php on line 37
+2016-07-13 13:47:34 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-13 13:47:35 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-13 13:47:52 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 6:03:16 - PHP Notice:  Undefined variable: footer in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\price_filter.tpl on line 78
+2016-07-14 7:24:50 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 7:24:51 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 7:25:41 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 8:14:46 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 8:14:47 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 8:15:39 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 10:30:19 - PHP Notice:  Undefined index: title in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 151
+2016-07-14 10:30:19 - PHP Notice:  Undefined index: text in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 152
+2016-07-14 11:09:07 - PHP Notice:  Undefined index: tab_description in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 113
+2016-07-14 11:09:07 - PHP Notice:  Undefined index: tab_description in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 113
+2016-07-14 11:09:07 - PHP Notice:  Undefined index: tab_description in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\cart.tpl on line 113
+2016-07-14 13:06:51 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-14 13:06:52 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-15 5:17:08 - PHP Notice:  Undefined index: model in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 86
+2016-07-15 5:17:08 - PHP Notice:  Undefined index: model in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 86
+2016-07-15 5:17:08 - PHP Notice:  Undefined index: model in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 86
+2016-07-15 5:17:08 - PHP Notice:  Undefined index: model in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 86
+2016-07-15 5:27:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:27:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:27:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:27:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:31:24 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:31:24 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:31:24 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:31:24 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 135
+2016-07-15 5:37:29 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:37:29 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:37:29 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:37:29 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:41:41 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:41:41 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:41:41 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:41:41 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:42:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:42:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:42:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:42:12 - PHP Notice:  Undefined variable: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 138
+2016-07-15 5:42:57 - PHP Notice:  Undefined index: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 139
+2016-07-15 5:42:57 - PHP Notice:  Undefined index: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 139
+2016-07-15 5:42:57 - PHP Notice:  Undefined index: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 139
+2016-07-15 5:42:57 - PHP Notice:  Undefined index: attribute_groups in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\module\special.tpl on line 139
+2016-07-15 8:25:40 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164
+2016-07-15 8:25:41 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\opencart\system\library\mail.php on line 164

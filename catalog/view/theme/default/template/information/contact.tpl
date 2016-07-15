@@ -148,9 +148,6 @@
 </div> -->
 
 
-
-     <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
-	<link rel="stylesheet" href="catalog/view/theme/default/css/animate.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script src="http://e-timer.ru/js/etimer.js"></script>

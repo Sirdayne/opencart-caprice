@@ -1,5 +1,7 @@
-<div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle price-basket"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></button>
+<a href="index.php?route=checkout/cart">
+ <div id="cart" class="btn-group btn-block">
+ <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle price-basket" id="basketx"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></button>
+  <!--<button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle price-basket" id="basketx"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></button>
   <ul class="dropdown-menu pull-left">
     <?php if ($products || $vouchers) { ?>
     <li>
@@ -54,5 +56,6 @@
       <p class="text-center"><?php echo $text_empty; ?></p>
     </li>
     <?php } ?>
-  </ul>
+  </ul>-->
 </div>
+</a>
