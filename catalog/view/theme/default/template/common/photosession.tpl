@@ -1,53 +1,33 @@
 <?php echo $header; ?>
+        
+        <script type="text/javascript" src="catalog/view/theme/default/js/jquery.min.js"></script>
 
-
-	<link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
-	<link rel="stylesheet" href="catalog/view/theme/default/css/animate.min.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script src="http://e-timer.ru/js/etimer.js"></script>
-    
+        <script src="catalog/view/theme/default/js/etimer.js"></script>
    
+    <div class="modal-back"></div>    
 
-	<!--<div class="wrapper white-wrapper">
-		<header>
-			<div class="content-holder">
-				<div class="header-top header-top-fd">
-					<div class="block">
-						<a href="#" class="button button-dark"><span class="basket-icon"></span>корзина (2)</a>
-						<a href="#" class="button button-dark">подобрать букет</a>
-					</div>
-					<div class="block center">
-						<span class="logo-block"><img src="catalog/view/theme/default/img/logo-pink.png" alt=""/></span>
-					</div>
-					<div class="block">
-						<address class="adress adress-dark">
-						  Наш адрес: г. Астана, ул. Б.Момышулы, <br>
-						  д.2в, ЖК "Ак Шанырак"<br>
-						  График работы: круглосуточно<br>
-						  <span>Тел.: +7 (771) 9115050</span><br>
-						  <span>Тел.: +7 (7172) 265050</span>
-						</address>
-					</div>
-				</div>
-				<nav class="nav-fd">
-					<ul>
-						<li><a href="#">О компании</a></li>
-						<li><a href="" class="dropdown-arrow active-menu">Услуги</a>
-							<ul>
-								<li><a href="index.php?route=common/weddingdecor">Свадебный декор</a></li>
-								<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
-								<li><a href="index.php?route=common/datesdecor">Оформление свиданий</a></li>
-								<li><a href="index.php?route=common/eventdecor">Оформление мероприятий</a></li>
-							</ul>
-						</li>
-						<li><a href="index.php?route=common/maincatalog">Букеты</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="index.php?route=information/contact">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>-->
+<!--<div class="modal-1 md-modal md-effect-1 consult-modal" id="modal-1">-->	
+    <div class="modal-1">		
+        <div class="deny-1"></div>				
+		<div class="md-content">															
+                <span class="consult-title">Подсказать вам в выборе услуги?</span>	
+            <form method="post" action="" style="text-align:center;">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="kapriz.kz">
+                <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
+                <input type="hidden" name="form_subject" value="Консультация">	
+                 <!-- END Hidden Required Fields -->
+
+                <input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон" style="text-align:center;"><!-- NEW LINE !!! -->
+                <!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
+                <button type="submit" class="button button-dark">заказать звонок</button>      	
+            </form>				
+		</div>																				
+	</div>	
+	
+	<!--<a  class="consult-btn md-trigger block-1" data-modal="modal-1">консультация</a>-->	
+	    <a  class="consult-btn md-trigger block-1">консультация</a>	
+    	
 		<div class="header-picture">
 			<div class="header-picture-desc hpd-3">
 				<h1>Фотосессия</h1>
@@ -66,8 +46,23 @@
 				</p>
 			</div>
 			<div class="pic-wrapper photosession-picture"></div>
+			<div class="m-under-desc">
+				<p>Остановись, мгновенье, ты прекрасно!... Мы поможем запечатлеть лучшие моменты Вашей жизни. Изысканные цветы украсят Вашу фотосессию и сделают ее неповторимой.</p>
+				<p>Преимущества фотосессии в бутике “Каприз”:</p>
+				<ul>
+					<li>опытные фотографы,</li>
+					<li>широкий выбор цветов, которые украсят Ваш образ,</li>
+					<li>подбор аксессуаров для фотосессии,</li>
+					<li>помощь визажистов в создании образа,</li>
+					<li>предоставление фотозоны для съемок,</li>
+					<li>Ваши пожелания мы выслушаем и учтем в работе,</li>
+					<li>и многое другое!</li>
+				</ul>
+				<p>Запечатлейте счастливые моменты с бутиком “Каприз”!</p>
+			</div>
 		</div>
-		<!--<section class="portfolio clearfix">
+		<!--
+		<section class="portfolio clearfix">
 			<h3>Галерея</h3>
 			<div class="mini-slider-wrap">
 				<div class="mini-slider clearfix">
@@ -85,30 +80,28 @@
 					</div>
 				</div>
 			</div>
-		</section>-->
-		
-           <!-- gallery.tpl ГАЛЕРЕЯ -->
-           
-            <!--<div class="">
-            <div class="container"> -->
-             
-             <section class="portfolio clearfix">
-               <h3>Галерея</h3>
-              <div class="row">
+		</section>
+		-->
+		       
+        <section class="portfolio clearfix">
+			<h3>Галерея</h3>
+			<div class="">
+               
                 <?php echo $column_left; ?>
                 <?php if ($column_left && $column_right) { ?>
-                <?php $class = 'col-sm-3'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } elseif ($column_left || $column_right) { ?>
-                <?php $class = 'col-sm-9'; ?>
+                <?php $class = 'col-sm-12'; ?>
                 <?php } else { ?>
-                <?php $class = 'col-sm-12 col-xs-9'; ?>
+                <?php $class = 'col-sm-12 col-xs-12'; ?>
                 <?php } ?>
-                <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
-                <?php echo $column_right; ?>
+                <div id="" class="<?php echo $class; ?>">
+                    <div class="swiper-border"></div>
+                    <?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+                    <?php echo $column_right; ?>
               </div>
-            </section>
-
-            
+		</section>
+		
 		<section class="howwework">
 			<div class="pink-middle clearfix">
 				<h3>Как мы работаем?</h3>
@@ -124,7 +117,7 @@
 					<script type="text/javascript">
 						jQuery(document).ready(function() {
 							jQuery(".eTimer").eTimer({
-								etType: 0, etDate: "03.07.2016.0.0", etTitleText: "", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "MyriadPro", etTextColor: "#383838", etPaddingTB: 0, etPaddingLR: 0, etBackground: "white", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "MyriadPro", etNumberSize: 35, etNumberColor: "#383838", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "white", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px rgba(255, 255, 255, 0.5)"
+								etType: 0, etDate: "01.08.2016.0.0", etTitleText: "", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "MyriadPro", etTextColor: "#383838", etPaddingTB: 0, etPaddingLR: 0, etBackground: "white", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "MyriadPro", etNumberSize: 35, etNumberColor: "#383838", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "white", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px rgba(255, 255, 255, 0.5)"
 							});
 						});
 					</script>
@@ -139,7 +132,7 @@
 							<p>Закажите свадебный декор у нас<br>
 								и получите фотосессию и<br>
 								фотозону в подарок!</p>
-							<a href="#" class="button">заказать</a>
+							<a class="button block-1">заказать</a>
 						</div>
 					</div>
 				</div>
@@ -170,45 +163,30 @@
 						<a href="#" class="vk">vkontakte</a>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!--<footer>
-			<div class="footer-menu footer-menu-dark clearfix">
-				<div><img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="Логотип цветочного бутика Kapriz"></div>
-				<div>
-					<h6>Меню</h6>
-					<ul>
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Букеты</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</div>
-				<div>
-					<h6>Оформление</h6>
-					<ul>
-						<li><a href="weddingdecor.html">Свадебный декор</a></li>
-						<li><a href="photosession.html">Фотосессия</a></li>
-						<li><a href="datesdecor.html">Романтические свидания</a></li>
-						<li><a href="eventdecor.html">Оформление мероприятий</a></li>
-					</ul>
-				</div>
-				<div class="footer-contacts">
+				<div class="m-footer-contacts m-footer-contacts-dark">
+					<p class="social">Мы в соц сетях</p>
+					<div class="social-block clearfix">
+						<a href="#" class="inst">instagram</a>
+						<a href="#" class="twit">twitter</a>
+						<a href="#" class="fb">facebook</a>
+						<a href="#" class="vk">vkontakte</a>
+					</div>
 					<h6>Контакты</h6>
-					<p>г.Астана, ул. Б.Момышулы,<br>
+					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
 						д.2в, ЖК "Ак Шанырак"<br>
 						График работы: круглосуточно</p>
-					<span>+7 (771) 9115050</span>
-					<span>8 (7172) 265050</span>
+					<a href="tel:+77719115050">+7(771) 911 50 50</a>
+					<a href="tel:+77172265050">+7(7172) 26 50 50</a>
 				</div>
 			</div>
-			<div class="under-footer under-footer-dark clearfix">
-				<div class="left-uf">www.ginnova.kz</div>
-				<div class="right-uf">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></div>
+			<div class="trepet trepet-dark">
+				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 			</div>
-		</footer>-->
+		</section>
 
-	<script type="text/javascript">
+  
+        <script type="text/javascript">
+		
 		$('.flower-select').click(function () {
 			$('.flower-select').not(this).removeClass('bouquets__link-b--checked');
 			$(this).toggleClass('bouquets__link-b--checked');
@@ -218,14 +196,7 @@
 			$(this).toggleClass('bouquets__link-b--checked');
 		});
 
-		$('.mini-slider').slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			centerMode: true,
-			prevArrow: "<button class='mini-slider__prev'></button>",
-			nextArrow: "<button class='mini-slider__next'></button>"
-		});
+		
 
 		$('.services__item').hover(
 				function(){
@@ -254,19 +225,51 @@
 				}
 		);
         $('.flower-box').hover(
-            function(){
-                $(this).parent().find('.box svg line.top').css("transform","translateX(-900px)");
-                $(this).parent().find('.box svg line.left').css("transform","translateY(560px)");
-                $(this).parent().find('.box svg line.bottom').css("transform","translateX(900px)");
-                $(this).parent().find('.box svg line.right').css("transform","translateY(-560px)");
-            },
-            function() {
-                $(this).parent().find('.box svg line.top').css("transform","translateX(0)");
-                $(this).parent().find('.box svg line.left').css("transform","translateY(0)");
-                $(this).parent().find('.box svg line.bottom').css("transform","translateX(0)");
-                $(this).parent().find('.box svg line.right').css("transform","translateY(0)");
-            }
-        );
-	</script>
+				function(){
+					$(this).parent().find('.box svg line.top').css("transform","translateX(-900px)");
+					$(this).parent().find('.box svg line.left').css("transform","translateY(560px)");
+					$(this).parent().find('.box svg line.bottom').css("transform","translateX(900px)");
+					$(this).parent().find('.box svg line.right').css("transform","translateY(-560px)");
+				},
+				function() {
+					$(this).parent().find('.box svg line.top').css("transform","translateX(0)");
+					$(this).parent().find('.box svg line.left').css("transform","translateY(0)");
+					$(this).parent().find('.box svg line.bottom').css("transform","translateX(0)");
+					$(this).parent().find('.box svg line.right').css("transform","translateY(0)");
+				}
 
+		);
+		$('.flower-box').hover(
+				function(){
+					$(this).parent().find('.box-tablet svg line.top').css("transform","translateX(-650px)");
+					$(this).parent().find('.box-tablet svg line.left').css("transform","translateY(360px)");
+					$(this).parent().find('.box-tablet svg line.bottom').css("transform","translateX(650px)");
+					$(this).parent().find('.box-tablet svg line.right').css("transform","translateY(-360px)");
+				},
+				function() {
+					$(this).parent().find('.box-tablet svg line.top').css("transform","translateX(0)");
+					$(this).parent().find('.box-tablet svg line.left').css("transform","translateY(0)");
+					$(this).parent().find('.box-tablet svg line.bottom').css("transform","translateX(0)");
+					$(this).parent().find('.box-tablet svg line.right').css("transform","translateY(0)");
+				}
+
+		);
+    </script>
+       
+       	<script src="catalog/view/theme/default/js/modal.js"></script>
+	
+	<script src="catalog/view/theme/default/js/maskedinput.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
+	</script>
+    
+    <script src="catalog/view/theme/default/js/script.js"></script>	
+       
+    <script type="text/javascript">
+    	$(function () {
+                $('#navact-2').addClass('active-menu');
+		});
+    </script>
+        
 <?php echo $footer; ?>

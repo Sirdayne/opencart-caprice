@@ -6,9 +6,9 @@
 				<div>
 					<h6>Меню</h6>
 					<ul>
-						<li><a href="index.php?route=common/mainhome">О компании</a></li>
+						<li><a href="index.php?route=common/about">О компании</a></li>
 						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
-						<li><a href="#">Доставка</a></li>
+						<li><a href="index.php?route=common/delivery">Доставка</a></li>
 						<li><a href="index.php?route=information/contact">Контакты</a></li>
 					</ul>
 				</div>
@@ -16,7 +16,7 @@
 					<h6>Оформление</h6>
 					<ul>
 						<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
-						<li><a href="index.php?route=common/photosessionon">Фотосессия</a></li>
+						<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
 						<li><a href="index.php?route=common/datesdecoration">Романтические свидания</a></li>
 						<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
 					</ul>
@@ -49,9 +49,8 @@
 			$('.link-with-circle').toggleClass('circle-up');
 		});
 	</script>
-      
-            
-    <script src="catalog/view/theme/default/js/script.js"></script>
-       
-        
+     
+    
+   
+                   
 </body></html>

@@ -148,9 +148,9 @@
 </div> -->
 
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script src="http://e-timer.ru/js/etimer.js"></script>
+	<script type="text/javascript" src="catalog/view/theme/default/js/jquery.min.js"></script>
+
+
 
 		<adress>
 			<div class="adress-holder clearfix">
@@ -227,6 +227,12 @@
 				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 			</div>
 		</div>
-        
+       
+       
+        <script type="text/javascript">
+            $(function () {
+                    $('#navact-5').addClass('active-menu');
+            });
+        </script>
 		
 <?php echo $footer; ?>

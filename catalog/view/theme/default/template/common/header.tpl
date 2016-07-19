@@ -22,13 +22,14 @@
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<!--<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />-->
 <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
 
 <!-- MY STYLES ARE HERE-->
 
     <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/my_style.css"> 
     <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/adaptive.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/stylesheet/modal.css"> 
 	
 	
 	<link rel="stylesheet" href="catalog/view/theme/default/css/style.css"> 
@@ -91,18 +92,18 @@
 	<button class="m-toggle-menu toggle-menu-dark toggle-menu-white"><span></span></button>
 	<div class="m-menu">
 		<ul class="m-menu-ul">
-			<li><a href="index.php?route=common/mainhome">О компании</a></li>
+			<li><a href="index.php?route=common/about">О компании</a></li>
 			<li>
 				<a class="link-with-circle">Услуги<span class="circle"></span></a>
 				<ul class="sec-menu">
 					<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
-					<li><a href="index.php?route=common/photosessionon">Фотосессия</a></li>
+					<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
 					<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
 					<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
 				</ul>
 			</li>
 			<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
-			<li><a href="">Доставка</a></li>
+			<li><a href="index.php?route=common/delivery">Доставка</a></li>
 			<li><a href="index.php?route=information/contact">Контакты</a></li>
 		</ul>
 	</div>
@@ -135,18 +136,18 @@
 				</div>
 				<nav class="nav-fd nav-fd-white">
 					<ul>
-						<li><a href="index.php?route=common/mainhome">О компании</a></li>
-						<li><p class="dropdown-arrow active-menu">Услуги</p>
+						<li><a href="index.php?route=common/about" id="navact-1">О компании</a></li>
+						<li><a class="dropdown-arrow" id="navact-2">Услуги</a>
 							<ul>
 								<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
-								<li><a href="index.php?route=common/photosessionon">Фотосессия</a></li>
+								<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
 								<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
 								<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
 							</ul>
 						</li>
-						<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="index.php?route=information/contact">Контакты</a></li>
+						<li><a href="index.php?route=product/category&path=59" id="navact-3">Букеты</a></li>
+						<li><a href="index.php?route=common/delivery" id="navact-4">Доставка</a></li>
+						<li><a href="index.php?route=information/contact" id="navact-5">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -169,7 +170,6 @@
 			</div>
 		</header>
 <!-- Категории фильтрация фильтры -->
-
 <?php if ($categories) { ?>
 <div class="container">
   <nav id="menu" class="navbar">
@@ -202,3 +202,4 @@
   </nav>
 </div>
 <?php } ?>
+

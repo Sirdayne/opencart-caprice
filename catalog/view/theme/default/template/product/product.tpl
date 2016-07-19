@@ -33,6 +33,12 @@
             <?php } ?>
           </ul>
           <?php } ?>
+          <!--
+          ОПИСАНИЕ
+          ХАРАКТЕРИСТИКИ 
+          АТРИБУТЫ
+          ФИЛЬТРЫ
+          
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
             <?php if ($attribute_groups) { ?>
@@ -42,6 +48,8 @@
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
             <?php } ?>
           </ul>
+          
+          -->
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
             <?php if ($attribute_groups) { ?>

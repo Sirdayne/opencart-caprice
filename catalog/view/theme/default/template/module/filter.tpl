@@ -16,7 +16,7 @@
       <div id="filter-group<?php echo $filter_group['filter_group_id']; ?>">
         <?php foreach ($filter_group['filter'] as $filter) { ?>
         <div class="checkbox">
-          <label class="checking">
+          <label class="checking invisible-check">
             <?php if (in_array($filter['filter_id'], $filter_category)) { ?>
             <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" checked="checked" />
             <span class="spoiler-block"><?php echo $filter['name']; ?></span>

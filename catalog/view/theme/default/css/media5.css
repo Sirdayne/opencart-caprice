@@ -35,9 +35,6 @@
     }
     .delivery-pics-item img {width: 100%;}
     .delivery-pics-wrapper {width: 750px;}
-    .inner-text {
-        padding:70px 0 0 25px;
-    }
 }
 @media (max-width: 1020px) {
     .content-holder nav>ul {width:792px;margin: 0 auto;}
@@ -63,7 +60,6 @@
     .footer-menu { width: 666px;}
     .footer-menu>div { margin-right: 30px;}
     .under-footer {width:666px;}
-    .under-footer-dark {left: calc(50% - 334px)}
 
     /*Для страниц с белой подложкой*/
     .white-wrapper .content-holder nav>ul {width:680px;margin: 0 auto;}
@@ -114,9 +110,6 @@
     .basket-wrapper { width: 600px;}
     .item-desc {margin-left: 30px;}
     .md-modal { width: 600px;}
-    .inner-text { line-height:20px;}
-    .inner-text h3 { font-size: 30px;}
-    .inner-text p { font-size: 16px;}
 }
 @media (max-width: 900px) {
     .content-holder nav>ul {width:680px;margin: 0 auto;}
@@ -133,12 +126,6 @@
     .white-wrapper .content-holder {display: none;}
     .white-wrapper .content-holder-mobile, .dark .m-menu, .dark .m-toggle-menu {display: block;}
     .white-wrapper { margin: 10px 5px;}
-    .a-item {
-        width: 80%;
-        float: none;
-        margin: 0 auto 8%;
-    }
-    .a-item:nth-child(even) { margin: 0 auto 5%;}
 }
 @media (max-width: 767px) {
     .content-holder {display: none;}
@@ -210,10 +197,6 @@
     .basket-wrapper { width: 450px;}
     .item-btns { position: absolute;bottom: 30px; right: 35px;}
     .basket-item {padding: 50px 0 140px 0;}
-    .inner-text { display: none;}
-    .outer-text { display: block;}
-    .main img { display: none;}
-    .main img[src*='dinara'] { display: block;}
 }
 
 @media (max-width: 700px) {
@@ -256,7 +239,6 @@
     .md-modal { width: 400px;}
     .md-content input, .md-content textarea { width: 100%;box-sizing: border-box;}
     .mobile-close-btn { display: block;}
-    .mfc-holder {padding-bottom: 80px;}
 }
 
 @media (max-width: 599px) {
@@ -500,6 +482,4 @@
     .consult-modal {width: 280px!important;}
     .delivery-info {width: 100%;}
     .delivery-info p {font-size: 14px;}
-    .outer-text h3 { font-size: 20px;}
-    .about-wrapper { width: 100%;}
 }

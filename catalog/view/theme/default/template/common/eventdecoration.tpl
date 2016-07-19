@@ -1,30 +1,33 @@
 <?php echo $header; ?>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    	<script src="http://e-timer.ru/js/etimer.js"></script>
+        <script type="text/javascript" src="catalog/view/theme/default/js/jquery.min.js"></script>
+	 
+        <script src="catalog/view/theme/default/js/etimer.js"></script>
     	
    
-    <div class="md-modal md-effect-1 consult-modal" id="modal-1">							
+<div class="modal-back"></div>    
+
+<!--<div class="modal-1 md-modal md-effect-1 consult-modal" id="modal-1">-->	
+    <div class="modal-1">		
+        <div class="deny-1"></div>				
 		<div class="md-content">															
-			<span class="consult-title">Подсказать вам в выборе услуги?</span>	
-            <form method="post" action="">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="kapriz.kz">
-            <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
-            <input type="hidden" name="form_subject" value="Консультация">	
-             <!-- END Hidden Required Fields -->
-            		
-			<input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон"><!-- NEW LINE !!! -->
-			<!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
-			<button type="submit" class="button button-dark">заказать звонок</button>      	
-        </form>				
+                <span class="consult-title">Подсказать вам в выборе услуги?</span>	
+            <form method="post" action="" style="text-align:center;">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="kapriz.kz">
+                <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
+                <input type="hidden" name="form_subject" value="Консультация">	
+                 <!-- END Hidden Required Fields -->
+
+                <input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон" style="text-align:center;"><!-- NEW LINE !!! -->
+                <!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
+                <button type="submit" class="button button-dark">заказать звонок</button>      	
+            </form>				
 		</div>																				
 	</div>	
-																					
-	<a  class="consult-btn md-trigger" data-modal="modal-1">консультация</a>		
-          
-              
+	
+	<!--<a  class="consult-btn md-trigger block-1" data-modal="modal-1">консультация</a>-->	
+	    <a  class="consult-btn md-trigger block-1">консультация</a>	 
 
 		<div class="header-picture">
 			<div class="header-picture-desc hpd-2">
@@ -45,7 +48,7 @@
                 <div class="flower-box">
                     <div class="desc-box">
                         <h2><span>Украсить</span> искусственными цветами</h2>
-                        <a href="#" class="button button-dark">заказать</a>
+                        <a class="button button-dark block-1">заказать</a>
                     </div>
                 </div>
                 <div class="m-square"></div>
@@ -70,7 +73,7 @@
 				<div class="flower-box flower-box-2">
 					<div class="desc-box desc-box-2">
 						<h2><span>Украсить</span>живыми цветами</h2>
-						<a href="#" class="button button-dark">заказать</a>
+						<a class="button button-dark block-1">заказать</a>
 					</div>
 				</div>
                 <div class="m-square"></div>
@@ -95,7 +98,7 @@
 				<div class="flower-box flower-box-3">
 					<div class="desc-box desc-box-3">
 						<h2><span>VIP</span>оформление</h2>
-						<a href="#" class="button button-dark">заказать</a>
+						<a class="button button-dark block-1">заказать</a>
 					</div>
 				</div>
                 <div class="m-square"></div>
@@ -193,7 +196,7 @@
 							<span>Акция</span>
 							<p>Закажите фотосессию сейчас и <br>
 								получите 5%-ную скидку!</p>
-							<a href="#" class="button">заказать</a>
+							<a class="button block-1">заказать</a>
 						</div>
 					</div>
 				</div>
@@ -244,12 +247,6 @@
                 <span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
             </div>
 		</section>
-		
-		
-		 <div class="md-overlay"></div> <!-- NEW LINE-->
-	<script src="catalog/view/theme/default/js/classie.js"></script> <!-- NEW LINE-->
-	<script src="catalog/view/theme/default/js/modalEffects.js"></script> <!-- NEW LINE-->
-	<script src="catalog/view/theme/default/js/maskedinput.js"></script> <!-- NEW LINE-->
 		
 		<script type="text/javascript">
 		
@@ -327,7 +324,22 @@
 				}
 
 		);
-             jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");}); <!-- NEW LINE !!! -->
+    </script>
+    
+    <script src="catalog/view/theme/default/js/modal.js"></script>
+	
+	<script src="catalog/view/theme/default/js/maskedinput.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
+	</script>
+    
+    <script src="catalog/view/theme/default/js/script.js"></script>	
+    
+    <script type="text/javascript">
+    	$(function () {
+                $('#navact-2').addClass('active-menu');
+		});
     </script>
 
 <?php echo $footer; ?>

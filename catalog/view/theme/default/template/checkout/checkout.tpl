@@ -1,3 +1,12 @@
+
+<!-- ACCORDION ACCORDEON -->
+
+
+<!-- ACCORDION ACCORDEON -->
+
+
+
+
 <?php echo $header; ?>
 <div class="container">
   <ul class="breadcrumb">
@@ -20,8 +29,16 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?></h1>
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
+      
+      
+      
+<div class="panel-group" id="accordion"> 
+     
+     
+     
+     
+      <div class="panel-group">
+        <div class="panel panel-default" style="display:none;">
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_option; ?></h4>
           </div>
@@ -49,6 +66,8 @@
         </div>
         <?php } ?>
         <?php if ($shipping_required) { ?>
+        
+        <!-- DISPLAY NONE delete -->
         <div class="panel panel-default" style="display:none">
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_shipping_address; ?></h4>
@@ -57,6 +76,7 @@
             <div class="panel-body"></div>
           </div>
         </div>
+        
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_shipping_method; ?></h4>
@@ -67,7 +87,7 @@
         </div>
         <?php } ?>
         <!--- M Y M Y M Y M Y style="display:none;" delete--->
-        <div class="panel panel-default" style="display:none;">
+        <div class="panel panel-default">
          <!--- M Y M Y M Y M Y--->
           <div class="panel-heading">
             <h4 class="panel-title"><?php echo $text_checkout_payment_method; ?></h4>
@@ -85,9 +105,11 @@
           </div>
         </div>
       </div>
+      </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+
 <script type="text/javascript"><!--
 $(document).on('change', 'input[name=\'account\']', function() {
 	if ($('#collapse-payment-address').parent().find('.panel-heading .panel-title > *').is('a')) {

@@ -293,6 +293,12 @@
             
             
         </script>
+        
+        <script type="text/javascript">
+    	$(function () {
+                $('#navact-3').addClass('active-menu');
+		});
+        </script>
 
 
 
