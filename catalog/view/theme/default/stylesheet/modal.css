@@ -1,9 +1,9 @@
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 960px) {
    .modal-1, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6	{
         top: 30% !important;
-	    left: 10% !important;
-	    width: 80% !important;
-        padding: 5% !important;
+	    left: 20% !important;
+	    width: 60% !important;
+        padding: 2% !important;
        
     }
 	.deny-1, .deny-2, .deny-3, .deny-4, .deny-5, .deny-6 {
@@ -11,6 +11,18 @@
 		top:5px !important;
     	right:5px !important;
 	}
+}
+
+@media screen and (max-width: 450px) {
+   .modal-1, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6	{
+        top: 30% !important;
+	    left: 10% !important;
+	    width: 80% !important;
+        padding: 1% !important;
+       
+    }
+    
+    
 }
 
 .block-1, .block-2, .block-3, .block-4, .block-5, .block-6 {
@@ -24,13 +36,19 @@
 .modal-1, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6 {
     position: fixed;
     display: none;
-    width: 30%;
-    top: 25%;
+    top: 35%;
     left: 35%;
+    
+    width: 30%;
+    
     z-index: 100;
     
     background: #FFF;
 }
+
+.modal-1 button, .modal-2 button, .modal-3 button, .modal-4 button, .modal-5 button, .modal-6 button	{
+        width: 170px !important;
+    }
 
 .modal-back{
     position: fixed;
@@ -46,6 +64,7 @@
     
     z-index: 10;
 }
+
 
 .deny-1, .deny-2, .deny-3, .deny-4, .deny-5, .deny-6 {
     position: absolute;

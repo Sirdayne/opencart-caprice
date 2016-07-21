@@ -3,10 +3,12 @@ $(document).ready(function() {
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
 		var th = $(this);
+		console.log(th);
 		$.ajax({
 			type: "POST",
-			url: "catalog/view/theme/default/js/mail.php", //Change
-			data: th.serialize()
+			url: "mail.php", //Change
+			data: th.serialize(),
+
 		}).done(function() {
 			alert("Благодарим вас! Вам перезвонят.");
 			setTimeout(function() {

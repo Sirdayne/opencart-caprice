@@ -21,16 +21,8 @@ define('DIR_UPLOAD', 'D:/xampp/htdocs/opencart/system/storage/upload/');
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', '123456');
-define('DB_DATABASE', 'shop');
-define('DB_PORT', '3306');
-define('DB_PREFIX', 'oc_');
-
-/*define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'ginnova');
 define('DB_PASSWORD', 'Ua9TMcD0VWYQyvos');
 define('DB_DATABASE', 'caprise');
 define('DB_PORT', '3306');
-define('DB_PREFIX', 'oc_');*/
+define('DB_PREFIX', 'oc_');

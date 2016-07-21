@@ -12,18 +12,18 @@
         <div class="deny-1"></div>				
 		<div class="md-content">															
                 <span class="consult-title">Подсказать вам в выборе услуги?</span>	
-            <form method="post" action="" style="text-align:center;">
+            <form role="form" style="text-align:center;">
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="kapriz.kz">
-                <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
-                <input type="hidden" name="form_subject" value="Консультация">	
+                <input type="hidden" name="project_name" value="caprice.ginnova.kz">
+                <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                <input type="hidden" name="form_subject" value="Заявка">	
                  <!-- END Hidden Required Fields -->
 
                 <input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон" style="text-align:center;"><!-- NEW LINE !!! -->
                 <!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
                 <button type="submit" class="button button-dark">заказать звонок</button>      	
             </form>				
-		</div>																				
+		</div>																			
 	</div>	
 	
 	<!--<a  class="consult-btn md-trigger block-1" data-modal="modal-1">консультация</a>-->	
@@ -259,14 +259,6 @@
 			$(this).toggleClass('bouquets__link-b--checked');
 		});
 
-		$('.mini-slider').slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			centerMode: true,
-			prevArrow: "<button class='mini-slider__prev'></button>",
-			nextArrow: "<button class='mini-slider__next'></button>"
-		});
 
 		$('.services__item').hover(
 				function(){

@@ -9,18 +9,18 @@
         <div class="deny-1"></div>				
 		<div class="md-content">															
                 <span class="consult-title">Подсказать вам в выборе услуги?</span>	
-            <form method="post" action="" style="text-align:center;">
+            <form role="form" style="text-align:center;">
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="kapriz.kz">
-                <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
-                <input type="hidden" name="form_subject" value="Консультация">	
+                <input type="hidden" name="project_name" value="caprice.ginnova.kz">
+                <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                <input type="hidden" name="form_subject" value="Заявка">	
                  <!-- END Hidden Required Fields -->
 
                 <input type="tel" class="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА" id="client-tel-for-consult" name="Телефон" style="text-align:center;"><!-- NEW LINE !!! -->
                 <!-- <a  class="button button-dark">заказать звонок</a>	NEW LINE !!! -->
                 <button type="submit" class="button button-dark">заказать звонок</button>      	
             </form>				
-		</div>																				
+		</div>																			
 	</div>	
 	
 	<!--<a  class="consult-btn md-trigger block-1" data-modal="modal-1">консультация</a>-->	
@@ -48,14 +48,14 @@
                 <div class="question">
                     <form method="post" action="">
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="kapriz.kz">
-                        <input type="hidden" name="admin_email" value="mussinyernar@gmail.com">
-                        <input type="hidden" name="form_subject" value="Консультация">	
+                        <input type="hidden" name="project_name" value="caprice.ginnova.kz">
+                        <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                        <input type="hidden" name="form_subject" value="Заявка">
                          <!-- END Hidden Required Fields -->
 
                         <span class="surak-title">Заказать доставку</span>
                         <input type="text" class="input-name" name="Имя" placeholder="ИМЯ">
-                        <input type="text" class="input-tel" name="Телефон" placeholder="ТЕЛЕФОН">
+                        <input type="tel" class="input-tel" id="client-tel-for-consult-2" name="Телефон" placeholder="ТЕЛЕФОН">
                         <textarea cols="30" class="input-tarea" name="Текст на открытку" rows="10" placeholder="ТЕКСТ НА ОТКРЫТКУ"></textarea>
                         <button type="submit" class="button button-dark">Заказать</button>
                     </form>	
@@ -89,6 +89,7 @@
 	<script type="text/javascript">
 		
 		jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
+        jQuery(function($){$("#client-tel-for-consult-2").mask("+7(999)999-99-99");});
 	</script>
     
     <script src="catalog/view/theme/default/js/script.js"></script>

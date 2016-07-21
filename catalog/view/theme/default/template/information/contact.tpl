@@ -175,35 +175,56 @@
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6AK3W74tP9D-r_wK_HRsTKXUHTs7Ovxu&width=100%&height=360&lang=ru_RU&sourceType=constructor&scroll=true"></script>
                     </div>
                 </div>
+                
+                
+                <!--
                 <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
                 <div class="question">
                    
                     <span class="surak-title">Остались вопросы?</span>
                     
-                    <!--<label class="col-sm-2 control-label" for="input-name"><?php echo $entry_name; ?></label>-->
-                    <input type="text" name="name"  class="input-name" placeholder="ИМЯ" value="<?php echo $name; ?>" id="input-name" class="form-control">
+                  
+                    <input type="text" name="name"  class="input-name" placeholder="ТЕЛЕФОН" value="<?php echo $name; ?>" id="input-name" class="form-control">
                     <?php if ($error_name) { ?>
                     <div class="text-danger"><?php echo $error_name; ?></div>
                     <?php } ?>
                     
-                    <!--<label class="col-sm-2 control-label" for="input-email"><?php echo $entry_email; ?></label>-->
-                    <input type="text" name="email" class="input-tel" placeholder="EMAIL ИЛИ ТЕЛЕФОН" value="<?php echo $email; ?>" id="input-email" class="form-control">
+                
+                    <input type="text" name="email" class="input-tel" placeholder="EMAIL" value="<?php echo $email; ?>" id="input-email" class="form-control">
                     <?php if ($error_email) { ?>
                     <div class="text-danger"><?php echo $error_email; ?></div>
                     <?php } ?>
                     
-                    <!--<label class="col-sm-2 control-label" for="input-enquiry"><?php echo $entry_enquiry; ?></label>-->
+                   
                     <textarea name="enquiry" cols="30" class="input-tarea" rows="10" placeholder="СООБЩЕНИЕ"  id="input-enquiry" class="form-control"><?php echo $enquiry; ?></textarea>
                     <?php if ($error_enquiry) { ?>
                     <div class="text-danger"><?php echo $error_enquiry; ?></div>
                     <?php } ?>
                     
-                    <!--<a href="#" class="button button-dark">отправить</a>-->
+                   
                     <?php echo $captcha; ?>
                     <input class="button button-dark button-width-imp" type="submit" value="<?php echo $button_submit; ?>" />
                  
                 </div>
-                </form>
+                </form>-->
+                
+                <div class="question">
+                   <form method="post" action="">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="caprice.ginnova.kz">
+                        <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                        <input type="hidden" name="form_subject" value="Заявка">
+                         <!-- END Hidden Required Fields -->
+                    
+                    <span class="surak-title">Остались вопросы?</span>
+                    <input type="text" name="Имя"  class="input-name" placeholder="ИМЯ">
+                    <input type="text" name="Телефон или email" class="input-tel" placeholder="EMAIL ИЛИ ТЕЛЕФОН">
+                    <textarea name="Сообщение" cols="30" class="input-tarea" rows="10" placeholder="СООБЩЕНИЕ"></textarea>
+            
+                    <button type="submit" class="button button-dark">Отправить</button>
+                  </form>
+                </div>
+                
             </div>
         </section>
         
@@ -234,5 +255,7 @@
                     $('#navact-5').addClass('active-menu');
             });
         </script>
+        
+        <script src="catalog/view/theme/default/js/script.js"></script>
 		
 <?php echo $footer; ?>

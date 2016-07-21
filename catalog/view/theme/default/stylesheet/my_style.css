@@ -1,36 +1,24 @@
-/*.container{
-  box-sizing: border-box;
-  margin: 0 auto;
-  position: relative;
-  width: 926px;
+
+#cart {
+    margin-bottom: 0 !important;
 }
 
-.container-con{
-  box-sizing: border-box;
-  margin: 0 auto;
-  position: relative;
-  width: 926px;
+#content{
+    min-height: 300px;
 }
-
-
-.cart{
-    width: 300px;
-    
-    height: 300px;
-    
-    display: inline-block;
-    
-    padding: 10px;
-    
-    font: normal 11px Arial;
-    
-}*/
-
-/* ~~~~ changes in style.css ~~~~ */
 
 .md-content{
     text-align: center !important;
-    
+}
+
+.margin-padding{
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+}
+
+.margin-padding h1, .margin-padding p{
+    margin-bottom: 15px;
 }
 
 #client-tel-for-consult{
@@ -111,10 +99,7 @@
   width: 80%;
 }
 
-.bouquets-b {
-    margin-left: -20px;
-    margin-right: -20px;
-}
+
 
 .logo-pink{
     background: url(../img/logo-pink.png) center center no-repeat;

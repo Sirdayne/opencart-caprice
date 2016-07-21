@@ -75,13 +75,17 @@
 					<div class="services__item__bottom__link"><a href="index.php?route=common/photosessionon">подробнее</a></div>
 				</section>
 				<a href="" class="services__link"></a>
-				<div class="box-lines">
-					<div class="line line-1"></div>
-					<div class="line line-2"></div>
-					<div class="line line-3"></div>
-					<div class="line line-4"></div>
-					<div class="line line-5"></div>
-					<div class="line line-6"></div>
+				<div class="new-box">
+					<svg width="100%" height="100%">
+						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
+						<line class="bottom" x1="0" y1="490" x2="-380" y2="490"></line>
+						<line class="right" x1="380" y1="490" x2="380" y2="980"></line>
+						<line class="top" x1="380" y1="0" x2="760" y2="0"></line>
+					</svg>
+					<svg class="angle">
+						<line class="mini-top" x1="0" y1="0" x2="-300" y2="0"></line>
+						<line class="mini-right" x1="300" y1="0" x2="300" y2="-50"></line>
+					</svg>
 				</div>
 			</article>
 			<article class="services__item block2" data-0="transform:translateY(0%);" data-end="transform:translateY(-10%);">
@@ -91,13 +95,17 @@
 					<div class="services__item__bottom__link"><a href="index.php?route=common/weddingdecoration">подробнее</a></div>
 				</section>
 				<a href="" class="services__link notouch skrollable skrollable-between"></a>
-				<div class="box-lines">
-					<div class="line line-1"></div>
-					<div class="line line-2"></div>
-					<div class="line line-3"></div>
-					<div class="line line-4"></div>
-					<div class="line line-5"></div>
-					<div class="line line-6"></div>
+				<div class="new-box">
+					<svg width="100%" height="100%">
+						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
+						<line class="bottom" x1="0" y1="490" x2="-380" y2="490"></line>
+						<line class="right" x1="380" y1="490" x2="380" y2="980"></line>
+						<line class="top" x1="380" y1="0" x2="760" y2="0"></line>
+					</svg>
+					<svg class="angle">
+						<line class="mini-top" x1="0" y1="0" x2="-300" y2="0"></line>
+						<line class="mini-right" x1="300" y1="0" x2="300" y2="-50"></line>
+					</svg>
 				</div>
 			</article>
 			<article class="services__item block3" data-0="transform:translateY(80%);" data-end="transform:translateY(-80%);">
@@ -107,13 +115,17 @@
 					<div class="services__item__bottom__link"><a href="index.php?route=common/eventdecoration">подробнее</a></div>
 				</section>
 				<a href="" class="services__link notouch skrollable skrollable-between"></a>
-				<div class="box-lines">
-					<div class="line line-1"></div>
-					<div class="line line-2"></div>
-					<div class="line line-3"></div>
-					<div class="line line-4"></div>
-					<div class="line line-5"></div>
-					<div class="line line-6"></div>
+				<div class="new-box">
+					<svg width="100%" height="100%">
+						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
+						<line class="bottom" x1="0" y1="490" x2="-380" y2="490"></line>
+						<line class="right" x1="380" y1="490" x2="380" y2="980"></line>
+						<line class="top" x1="380" y1="0" x2="760" y2="0"></line>
+					</svg>
+					<svg class="angle">
+						<line class="mini-top" x1="0" y1="0" x2="-300" y2="0"></line>
+						<line class="mini-right" x1="300" y1="0" x2="300" y2="-50"></line>
+					</svg>
 				</div>
 			</article>
 			<article class="services__item block4" data-0="transform:translateY(-35%);" data-end="transform:translateY(15%);">
@@ -123,13 +135,17 @@
 					<div class="services__item__bottom__link"><a href="index.php?route=common/datesdecoration">подробнее</a></div>
 				</section>
 				<a href="" class="services__link"></a>
-				<div class="box-lines">
-					<div class="line line-1"></div>
-					<div class="line line-2"></div>
-					<div class="line line-3"></div>
-					<div class="line line-4"></div>
-					<div class="line line-5"></div>
-					<div class="line line-6"></div>
+				<div class="new-box">
+					<svg width="100%" height="100%">
+						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
+						<line class="bottom" x1="0" y1="490" x2="-380" y2="490"></line>
+						<line class="right" x1="380" y1="490" x2="380" y2="980"></line>
+						<line class="top" x1="380" y1="0" x2="760" y2="0"></line>
+					</svg>
+					<svg class="angle">
+						<line class="mini-top" x1="0" y1="0" x2="-300" y2="0"></line>
+						<line class="mini-right" x1="300" y1="0" x2="300" y2="-50"></line>
+					</svg>
 				</div>
 			</article>
 		</div>
@@ -210,47 +226,6 @@
 			]
 		});
 
-		$('.services__item').hover(
-				function(){
-					var that = $(this);
-					that.find('.line-1').animate({height: '100%'}, 150);
-					setTimeout(function(){
-						that.find('.line-2').animate({width: '100%'}, 150);
-					},150);
-					setTimeout(function(){
-						that.find('.line-3').animate({height: '100%'}, 150);
-					},300);
-					setTimeout(function(){
-						that.find('.line-4').animate({width: '100%'}, 150);
-					},450);
-					setTimeout(function(){
-						that.find('.line-5').animate({width: '100%'}, 150);
-					},600);
-					setTimeout(function(){
-						that.find('.line-6').animate({height: '10%'}, 150);
-					},750);
-				},
-				function(){
-					var that = $(this);
-					that.find('.line-6').animate({height: '0'}, 50);
-					setTimeout(function(){
-						that.find('.line-5').animate({width: '0'}, 50);
-					},50);
-					setTimeout(function(){
-						that.find('.line-4').animate({width: '0'}, 50);
-					},100);
-					setTimeout(function(){
-						that.find('.line-3').animate({height: '0'}, 50);
-					},150);
-					setTimeout(function(){
-						that.find('.line-2').animate({width: '0'}, 50);
-					},200);
-					setTimeout(function(){
-						that.find('.line-1').animate({height: '0'}, 50);
-					},250);
-				}
-		);
-
 	</script>
 	<script src="catalog/view/theme/default/js/ismobile.js"></script>
 	
@@ -274,6 +249,9 @@
     
 <script type="text/javascript">
     	$(function () {
+            
+            
+            $('.wrapper').removeClass('white-wrapper');
             
             var flowerClass = document.getElementsByClassName('animationflower');
             
